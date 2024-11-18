@@ -105,10 +105,14 @@ class MujocoRunner(Runner):
                     # print("+++++++=data++++++++=", data)
                     print("some episodes done, average rewards: {}, average costs: {}".format(aver_episode_rewards,
                                                                                               aver_episode_costs))
-                    self.writter.add_scalars("train_episode_rewards", {"aver_rewards": aver_episode_rewards},
-                                             total_num_steps)
-                    self.writter.add_scalars("train_episode_costs", {"aver_costs": aver_episode_costs},
-                                             total_num_steps)
+                    if self.use_wandb:
+                        wandb.log({"aver_rewards": aver_episode_rewards, "aver_costs": aver_episode_costs},
+                                  step=total_num_steps)
+                    else:
+                        self.writter.add_scalars("train_episode_rewards", {"aver_rewards": aver_episode_rewards},
+                                                total_num_steps)
+                        self.writter.add_scalars("train_episode_costs", {"aver_costs": aver_episode_costs},
+                                                total_num_steps)
 
 
 

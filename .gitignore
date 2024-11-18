@@ -1,0 +1,5 @@
+MAPCRPO
+# ignore all pyc files
+*.pyc
+*.zz
+MACPO/macpo/scripts/results

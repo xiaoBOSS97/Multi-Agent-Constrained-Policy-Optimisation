@@ -72,7 +72,8 @@ class Runner(object):
                 if not os.path.exists(self.save_dir):
                     os.makedirs(self.save_dir)
 
-        from macpo.algorithms.r_mappo.r_macpo import R_MACTRPO_CPO as TrainAlgo
+        # from macpo.algorithms.r_mappo.r_macpo import R_MACTRPO_CPO as TrainAlgo
+        from macpo.algorithms.pcrpo import PCRPO as TrainAlgo
 
         from macpo.algorithms.r_mappo.algorithm.MACPPOPolicy import MACPPOPolicy as Policy
 

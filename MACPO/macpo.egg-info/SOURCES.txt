@@ -1,4 +1,3 @@
-README.md
 setup.py
 macpo/__init__.py
 macpo/config.py
@@ -7,8 +6,10 @@ macpo.egg-info/SOURCES.txt
 macpo.egg-info/dependency_links.txt
 macpo.egg-info/top_level.txt
 macpo/algorithms/__init__.py
+macpo/algorithms/pcrpo.py
+macpo/algorithms/trpo.py
 macpo/algorithms/r_mappo/__init__.py
-macpo/algorithms/r_mappo/r_mactrpo_based_cpo.py
+macpo/algorithms/r_mappo/r_macpo.py
 macpo/envs/__init__.py
 macpo/envs/env_wrappers.py
 macpo/envs/safety_ma_mujoco/__init__.py
@@ -29,9 +30,9 @@ macpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/assets/__init__.py
 macpo/runner/__init__.py
 macpo/runner/separated/__init__.py
 macpo/runner/separated/base_runner.py
-macpo/runner/separated/base_runner_mactrpo_based_matrpo.py
+macpo/runner/separated/base_runner_macpo.py
 macpo/runner/separated/mujoco_runner.py
-macpo/runner/separated/mujoco_runner_mactrpo_based_matrpo.py
+macpo/runner/separated/mujoco_runner_macpo.py
 macpo/scripts/__init__.py
 macpo/scripts/train/__init__.py
 macpo/scripts/train/train_mujoco.py
