@@ -686,7 +686,7 @@ class PCRPO():
 
             accept_ratio = 0.1
             # TODO: check kl ?
-            if ratio.item() > accept_ratio and loss_improve.item() > 0:
+            if loss_improve < 0:
                 # print("fval after", newfval.item())
                 reward_grad = new_params - params
                 return True, loss_improve, expected_improve, ratio, reward_grad
@@ -820,7 +820,7 @@ class PCRPO():
             ratio = loss_improve / expected_improve
 
             accept_ratio = 0.1
-            if ratio.item() > accept_ratio and loss_improve.item() > 0:
+            if loss_improve > 0:
                 # print("fval after", newfval.item())
                 cost_grad = new_params - params
                 return True, loss_improve, expected_improve, ratio, cost_grad
@@ -937,7 +937,8 @@ class PCRPO():
         #     safety_violation = True
         #     final_grad = pcgrad_v1(reward_gradient=reward_grad, cost_gradient=cost_grad,
         #                                 safety_violation=safety_violation)
-        final_grad = pcgrad(reward_grad, cost_grad)
+        # final_grad = pcgrad(reward_grad, cost_grad)
+        final_grad = cost_grad
         # safety_violation = True
         # final_grad = pcgrad_v1(reward_gradient=reward_grad, cost_gradient=cost_grad,
         #                             safety_violation=safety_violation)
