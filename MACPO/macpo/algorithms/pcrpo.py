@@ -652,6 +652,8 @@ class PCRPO():
         fraction_coef = self.fraction_coef # 0.27
         fraction = self.line_search_fraction # 0.5  # line search step size
         reward_grad = params - params
+        best_loss_improve = 0
+        best_params = params
         # line search
         for i in range(self.ls_step):
             # x_norm = torch.norm(x)
@@ -684,14 +686,25 @@ class PCRPO():
             expected_improve *= fraction
             ratio = loss_improve / expected_improve
 
+            kl = self.kl_divergence(obs_batch,
+                                    rnn_states_batch,
+                                    actions_batch,
+                                    masks_batch,
+                                    available_actions_batch,
+                                    active_masks_batch,
+                                    new_actor=self.policy.actor,
+                                    old_actor=old_actor)
+            kl = kl.mean()
+
             accept_ratio = 0.1
             # TODO: check kl ?
-            if loss_improve < 0:
-                # print("fval after", newfval.item())
-                reward_grad = new_params - params
-                return True, loss_improve, expected_improve, ratio, reward_grad
+            if (kl < self.kl_threshold) and loss_improve < best_loss_improve:
+                best_loss_improve = loss_improve
+                best_params = new_params
+                # reward_grad = new_params - params
+                # return True, loss_improve, expected_improve, ratio, reward_grad
             
-        return False, loss_improve, expected_improve, ratio, reward_grad  
+        return True, best_loss_improve, expected_improve, ratio, best_params-params  
         # return value_loss, critic_grad_norm, kl, loss_improve, expected_improve, dist_entropy, ratio, cost_loss, cost_grad_norm, whether_recover_policy_value, cost_preds_batch, cost_returns_barch, B_cost_loss_grad, lam, nu, g_step_dir, b_step_dir, x, action_mu, action_std, B_cost_loss_grad_dot
 
 
@@ -820,7 +833,18 @@ class PCRPO():
             ratio = loss_improve / expected_improve
 
             accept_ratio = 0.1
-            if loss_improve < 0:
+
+            kl = self.kl_divergence(obs_batch,
+                                    rnn_states_batch,
+                                    actions_batch,
+                                    masks_batch,
+                                    available_actions_batch,
+                                    active_masks_batch,
+                                    new_actor=self.policy.actor,
+                                    old_actor=old_actor)
+            kl = kl.mean()
+
+            if (kl < self.kl_threshold) and loss_improve < 0:
                 # print("fval after", newfval.item())
                 cost_grad = new_params - params
                 return True, loss_improve, expected_improve, ratio, cost_grad
