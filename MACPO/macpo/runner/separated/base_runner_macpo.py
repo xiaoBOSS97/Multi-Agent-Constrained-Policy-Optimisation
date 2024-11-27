@@ -136,7 +136,7 @@ class Runner(object):
             next_costs = _t2n(next_costs)
             self.buffer[agent_id].compute_cost_returns(next_costs, self.trainer[agent_id].value_normalizer)
 
-    def train(self):
+    def train(self, aver_episode_costs):
         # have modified for SAD_PPO
         train_infos = []
         cost_train_infos = []
@@ -171,7 +171,7 @@ class Runner(object):
             # safe_buffer, cost_adv = self.buffer_filter(agent_id)
             # train_info = self.trainer[agent_id].train(safe_buffer, cost_adv)
 
-            train_info = self.trainer[agent_id].train(self.buffer[agent_id])
+            train_info = self.trainer[agent_id].train(self.buffer[agent_id], aver_episode_costs)
 
             new_actions_logprob, dist_entropy, action_mu, action_std = self.trainer[agent_id].policy.actor.evaluate_actions(
                 self.buffer[agent_id].obs[:-1].reshape(-1, *self.buffer[agent_id].obs.shape[2:]),

@@ -59,14 +59,12 @@ class MujocoRunner(Runner):
                 reward_agent = np.squeeze(rewards) # shape (n_rollout_threads, agent_num)
                 cost_agent = np.squeeze(costs) # shape (n_rollout_threads, agent_num)
 
-                print(f"reward_env: {reward_env}, reward_agent: {reward_agent}")
-                print(f"cost_env: {cost_env}, cost_agent: {cost_agent}")
                 # add up rewards and costs
-                train_episode_rewards_agent += reward_agent # shape (n_rollout_threads, agent_num)
-                train_episode_costs_agent += cost_agent # shape (n_rollout_threads, agent_num)
-
                 train_episode_rewards += reward_env
                 train_episode_costs += cost_env
+
+                train_episode_rewards_agent += reward_agent # shape (n_rollout_threads, agent_num)
+                train_episode_costs_agent += cost_agent # shape (n_rollout_threads, agent_num)
 
                 # 
                 for t in range(self.n_rollout_threads):
@@ -74,8 +72,8 @@ class MujocoRunner(Runner):
                         done_episodes_rewards.append(train_episode_rewards[t])
                         done_episodes_costs.append(train_episode_costs[t])
 
-                        done_episodes_rewards_agent.append(train_episode_rewards_agent[t]) # shape (_, agent_num)
-                        done_episodes_costs_agent.append(train_episode_costs_agent[t]) # shape (_, agent_num)
+                        done_episodes_rewards_agent.append(list(train_episode_rewards_agent[t])) # shape (_, agent_num)
+                        done_episodes_costs_agent.append(list(train_episode_costs_agent[t])) # shape (_, agent_num)
 
                         train_episode_rewards[t] = 0
                         train_episode_costs[t] = 0
@@ -85,8 +83,11 @@ class MujocoRunner(Runner):
         
                 done_episodes_costs_aver = np.mean(done_episodes_costs)
 
-                done_episodes_rewards_agent_aver = np.mean(done_episodes_rewards_agent, axis=0) # shape (, agent_num)
-                done_episodes_costs_agent_aver = np.mean(done_episodes_costs_agent, axis=0) # shape (, agent_num)
+                # done_episodes_rewards_agent_aver = np.mean(done_episodes_rewards_agent, axis=0) # shape (, agent_num)
+                # done_episodes_costs_agent_aver = np.mean(done_episodes_costs_agent, axis=0) # shape (, agent_num)
+
+                # print(f"reward_env: {train_episode_rewards}, reward_agent: {train_episode_rewards_agent}")
+                # print(f"cost_env: {done_episodes_costs_aver}, cost_agent: {done_episodes_costs_agent_aver}")
 
                 data = obs, share_obs, rewards, costs, dones, infos, \
                        values, actions, action_log_probs, \
@@ -95,10 +96,12 @@ class MujocoRunner(Runner):
                 # insert data into buffer
 
                 self.insert(data)
+            
+            aver_episode_costs = np.mean(done_episodes_costs)
 
             # compute return and update network
             self.compute()
-            train_infos = self.train()
+            train_infos = self.train(aver_episode_costs)
 
             # post process
             total_num_steps = (episode + 1) * self.episode_length * self.n_rollout_threads
@@ -130,7 +133,7 @@ class MujocoRunner(Runner):
                     print("some episodes done, average rewards: {}, average costs: {}".format(aver_episode_rewards,
                                                                                               aver_episode_costs))
                     
-                    print(f"done_episodes_reward_agent_aver: {done_episodes_rewards_agent_aver}, done_episodes_costs_agent_aver: {done_episodes_costs_agent_aver}")
+                    # print(f"done_episodes_reward_agent_aver: {done_episodes_rewards_agent_aver}, done_episodes_costs_agent_aver: {done_episodes_costs_agent_aver}")
                     if self.use_wandb:
                         wandb.log({"aver_rewards": aver_episode_rewards, "aver_costs": aver_episode_costs},
                                   step=total_num_steps)
