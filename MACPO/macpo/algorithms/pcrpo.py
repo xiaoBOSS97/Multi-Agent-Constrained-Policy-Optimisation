@@ -703,7 +703,7 @@ class PCRPO():
                 best_params = new_params
                 # reward_grad = new_params - params
                 # return True, loss_improve, expected_improve, ratio, reward_grad
-            
+        
         return True, best_loss_improve, expected_improve, ratio, best_params-params  
         # return value_loss, critic_grad_norm, kl, loss_improve, expected_improve, dist_entropy, ratio, cost_loss, cost_grad_norm, whether_recover_policy_value, cost_preds_batch, cost_returns_barch, B_cost_loss_grad, lam, nu, g_step_dir, b_step_dir, x, action_mu, action_std, B_cost_loss_grad_dot
 
@@ -951,6 +951,7 @@ class PCRPO():
 
         # value trpo
         Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
+        self.update_model(self.policy.actor, pre_actor_params)
         # cost trpo
         Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
 
