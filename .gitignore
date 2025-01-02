@@ -2,4 +2,5 @@
 *.pyc
 *.zz
 MACPO/macpo/scripts/results
+MAPCRPO/mapcrpo/scripts/results
 __pycache__
