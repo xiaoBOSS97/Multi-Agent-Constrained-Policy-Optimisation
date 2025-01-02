@@ -1,0 +1,75 @@
+2024-11-26 01:54:26,802 INFO    MainThread:2684022 [wandb_init.py:_log_setup():292] Logging user logs to /home/zhi.zheng/zz/RL/Multi-Agent-Constrained-Policy-Optimisation/MACPO/macpo/scripts/results/mujoco/Ant-v2/macpo/rnn/wandb/run-20241126_015426-3kqyt8jh/logs/debug.log
+2024-11-26 01:54:26,803 INFO    MainThread:2684022 [wandb_init.py:_log_setup():293] Logging internal logs to /home/zhi.zheng/zz/RL/Multi-Agent-Constrained-Policy-Optimisation/MACPO/macpo/scripts/results/mujoco/Ant-v2/macpo/rnn/wandb/run-20241126_015426-3kqyt8jh/logs/debug-internal.log
+2024-11-26 01:54:26,803 INFO    MainThread:2684022 [wandb_setup.py:_flush():68] setting env: {}
+2024-11-26 01:54:26,803 INFO    MainThread:2684022 [wandb_setup.py:_flush():68] setting user settings: {}
+2024-11-26 01:54:26,803 INFO    MainThread:2684022 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2024-11-26 01:54:27,861 INFO    MainThread:2684022 [wandb_run.py:_console_start():1265] atexit reg
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [wandb_run.py:_redirect():1135] redirect: SettingsConsole.REDIRECT
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [wandb_run.py:_redirect():1138] Redirecting console.
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [redirect.py:install():196] install start
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [redirect.py:install():211] install stop
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [redirect.py:install():196] install start
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [redirect.py:install():211] install stop
+2024-11-26 01:54:27,862 INFO    MainThread:2684022 [wandb_run.py:_redirect():1182] Redirects installed.
+2024-11-26 01:54:31,362 INFO    MainThread:2684022 [wandb_run.py:_atexit_cleanup():1238] got exitcode: 255
+2024-11-26 01:54:31,363 INFO    MainThread:2684022 [wandb_run.py:_restore():1210] restore
+2024-11-26 01:54:31,364 INFO    MainThread:2684022 [redirect.py:uninstall():215] uninstall start
+2024-11-26 01:54:31,364 INFO    MainThread:2684022 [redirect.py:_stop():264] _stop: stdout
+2024-11-26 01:54:31,365 INFO    MainThread:2684022 [redirect.py:_stop():270] _stop closed: stdout
+2024-11-26 01:54:31,367 INFO    stdout    :2684022 [redirect.py:_pipe_relay():119] relay done saw last write: stdout
+2024-11-26 01:54:31,367 INFO    stdout    :2684022 [redirect.py:_pipe_relay():135] relay done done: stdout
+2024-11-26 01:54:31,371 INFO    MainThread:2684022 [redirect.py:_stop():276] _stop joined: stdout
+2024-11-26 01:54:31,371 INFO    MainThread:2684022 [redirect.py:_stop():278] _stop rd closed: stdout
+2024-11-26 01:54:31,371 INFO    MainThread:2684022 [redirect.py:uninstall():219] uninstall done
+2024-11-26 01:54:31,371 INFO    MainThread:2684022 [redirect.py:uninstall():215] uninstall start
+2024-11-26 01:54:31,371 INFO    MainThread:2684022 [redirect.py:_stop():264] _stop: stderr
+2024-11-26 01:54:31,372 INFO    MainThread:2684022 [redirect.py:_stop():270] _stop closed: stderr
+2024-11-26 01:54:31,372 INFO    stderr    :2684022 [redirect.py:_pipe_relay():119] relay done saw last write: stderr
+2024-11-26 01:54:31,372 INFO    stderr    :2684022 [redirect.py:_pipe_relay():135] relay done done: stderr
+2024-11-26 01:54:31,372 INFO    MainThread:2684022 [redirect.py:_stop():276] _stop joined: stderr
+2024-11-26 01:54:31,373 INFO    MainThread:2684022 [redirect.py:_stop():278] _stop rd closed: stderr
+2024-11-26 01:54:31,373 INFO    MainThread:2684022 [redirect.py:uninstall():219] uninstall done
+2024-11-26 01:54:31,379 INFO    MainThread:2684022 [wandb_run.py:_wait_for_finish():1349] got exit ret: uuid: "ad7ca09d311241bba2d169c017516e81"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 1813
+      total_bytes: 1813
+    }
+  }
+}
+
+2024-11-26 01:54:33,384 INFO    MainThread:2684022 [wandb_run.py:_wait_for_finish():1349] got exit ret: uuid: "f79997688f7d43c1b7632c7d3a9a6a55"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 259474
+      total_bytes: 259474
+    }
+  }
+}
+
+2024-11-26 01:54:35,389 INFO    MainThread:2684022 [wandb_run.py:_wait_for_finish():1349] got exit ret: uuid: "d7f7fef06e9f4c9892c5beda3c0884cf"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 259474
+      total_bytes: 259474
+    }
+  }
+}
+
+2024-11-26 01:54:36,450 INFO    MainThread:2684022 [wandb_run.py:_show_files():1543] logging synced files
+2024-11-26 01:54:36,450 INFO    MainThread:2684022 [internal.py:handle_exit():137] Internal process exited

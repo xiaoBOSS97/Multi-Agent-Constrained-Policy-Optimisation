@@ -1,0 +1,386 @@
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({ankle3, hip3}), HyperEdge({hip4, hip2, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({ankle3, hip3}), HyperEdge({hip4, hip2, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip1, hip3, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip1, hip3, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip3, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip1, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip1, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip1, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip1, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip1, hip4, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip1, hip4, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip4, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip4, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip2, hip4, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip2, hip4, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip4, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip4, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip4, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip2, hip3, hip4, hip1})]
+/home/zhi.zheng/micromamba/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py:3441: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/zhi.zheng/micromamba/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 0/625 episodes, total num timesteps 16000/10000000, FPS 679.
+
+average_step_rewards is 0.46487462520599365.
+some episodes done, average rewards: 170.87783198097313, average costs: 13.28125
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 5/625 episodes, total num timesteps 96000/10000000, FPS 694.
+
+average_step_rewards is 0.4446866810321808.
+some episodes done, average rewards: 143.25024441242866, average costs: 30.333333333333332
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 10/625 episodes, total num timesteps 176000/10000000, FPS 682.
+
+average_step_rewards is 0.4417416751384735.
+some episodes done, average rewards: 192.2670438906876, average costs: 61.578947368421055
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 15/625 episodes, total num timesteps 256000/10000000, FPS 681.
+
+average_step_rewards is 0.4459976851940155.
+some episodes done, average rewards: 217.50413836353226, average costs: 97.8
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 20/625 episodes, total num timesteps 336000/10000000, FPS 678.
+
+average_step_rewards is 0.5057857036590576.
+some episodes done, average rewards: 237.16402589295072, average costs: 78.62068965517241
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 25/625 episodes, total num timesteps 416000/10000000, FPS 15.
+
+average_step_rewards is 0.46306824684143066.
+some episodes done, average rewards: 228.21086422488608, average costs: 53.67567567567568
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 30/625 episodes, total num timesteps 496000/10000000, FPS 18.
+
+average_step_rewards is 0.5214608907699585.
+some episodes done, average rewards: 290.68490331359953, average costs: 85.3076923076923
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 35/625 episodes, total num timesteps 576000/10000000, FPS 21.
+
+average_step_rewards is 0.533233106136322.
+some episodes done, average rewards: 260.99234673212214, average costs: 55.294117647058826
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 40/625 episodes, total num timesteps 656000/10000000, FPS 24.
+
+average_step_rewards is 0.5230228304862976.
+some episodes done, average rewards: 305.6572685390924, average costs: 88.14285714285714
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 45/625 episodes, total num timesteps 736000/10000000, FPS 27.
+
+average_step_rewards is 0.5440110564231873.
+some episodes done, average rewards: 347.70147050049417, average costs: 131.0
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 50/625 episodes, total num timesteps 816000/10000000, FPS 30.
+
+average_step_rewards is 0.5335639715194702.
+some episodes done, average rewards: 294.4758341798814, average costs: 96.5
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 55/625 episodes, total num timesteps 896000/10000000, FPS 33.
+
+average_step_rewards is 0.5816413164138794.
+some episodes done, average rewards: 431.89839145520205, average costs: 83.5909090909091
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 60/625 episodes, total num timesteps 976000/10000000, FPS 35.
+
+average_step_rewards is 0.5548626780509949.
+some episodes done, average rewards: 392.2002405618233, average costs: 140.04347826086956
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 65/625 episodes, total num timesteps 1056000/10000000, FPS 38.
+
+average_step_rewards is 0.5647767186164856.
+some episodes done, average rewards: 417.078917451639, average costs: 66.3
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 70/625 episodes, total num timesteps 1136000/10000000, FPS 41.
+
+average_step_rewards is 0.5818482041358948.
+some episodes done, average rewards: 414.6844860183825, average costs: 37.65217391304348
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 75/625 episodes, total num timesteps 1216000/10000000, FPS 43.
+
+average_step_rewards is 0.5765023231506348.
+some episodes done, average rewards: 478.1808708363421, average costs: 154.6
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 80/625 episodes, total num timesteps 1296000/10000000, FPS 44.
+
+average_step_rewards is 0.6132491230964661.
+some episodes done, average rewards: 474.47336810916056, average costs: 88.4
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 85/625 episodes, total num timesteps 1376000/10000000, FPS 47.
+
+average_step_rewards is 0.6928890943527222.
+some episodes done, average rewards: 480.0884285978677, average costs: 89.22727272727273
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 90/625 episodes, total num timesteps 1456000/10000000, FPS 49.
+
+average_step_rewards is 0.6414647102355957.
+some episodes done, average rewards: 458.0051789783699, average costs: 68.75
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 95/625 episodes, total num timesteps 1536000/10000000, FPS 52.
+
+average_step_rewards is 0.6912790536880493.
+some episodes done, average rewards: 459.1673803997163, average costs: 109.33333333333333
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 100/625 episodes, total num timesteps 1616000/10000000, FPS 54.
+
+average_step_rewards is 0.6958884000778198.
+some episodes done, average rewards: 591.9758243905303, average costs: 172.78947368421052
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 105/625 episodes, total num timesteps 1696000/10000000, FPS 57.
+
+average_step_rewards is 0.6921319365501404.
+some episodes done, average rewards: 535.9595792972524, average costs: 95.33333333333333
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 110/625 episodes, total num timesteps 1776000/10000000, FPS 59.
+
+average_step_rewards is 0.7307911515235901.
+some episodes done, average rewards: 611.7176222928176, average costs: 47.78947368421053
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 115/625 episodes, total num timesteps 1856000/10000000, FPS 62.
+
+average_step_rewards is 0.7191659808158875.
+some episodes done, average rewards: 552.2027629524703, average costs: 115.2
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 120/625 episodes, total num timesteps 1936000/10000000, FPS 64.
+
+average_step_rewards is 0.7173141241073608.
+some episodes done, average rewards: 614.2602232530724, average costs: 45.05263157894737
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 125/625 episodes, total num timesteps 2016000/10000000, FPS 67.
+
+average_step_rewards is 0.7641383409500122.
+some episodes done, average rewards: 606.7238558058675, average costs: 105.5
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 130/625 episodes, total num timesteps 2096000/10000000, FPS 69.
+
+average_step_rewards is 0.7702673077583313.
+some episodes done, average rewards: 635.0606707333515, average costs: 23.736842105263158
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 135/625 episodes, total num timesteps 2176000/10000000, FPS 71.
+
+average_step_rewards is 0.8122255206108093.
+some episodes done, average rewards: 631.197123156637, average costs: 25.1
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 140/625 episodes, total num timesteps 2256000/10000000, FPS 74.
+
+average_step_rewards is 0.8194140791893005.
+some episodes done, average rewards: 711.2045852092631, average costs: 48.0
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 145/625 episodes, total num timesteps 2336000/10000000, FPS 76.
+
+average_step_rewards is 0.8556374907493591.
+some episodes done, average rewards: 731.7492924107729, average costs: 21.833333333333332
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 150/625 episodes, total num timesteps 2416000/10000000, FPS 78.
+
+average_step_rewards is 0.8647881150245667.
+some episodes done, average rewards: 842.545200895542, average costs: 28.27777777777778
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 155/625 episodes, total num timesteps 2496000/10000000, FPS 81.
+
+average_step_rewards is 0.8785181045532227.
+some episodes done, average rewards: 736.7972279970114, average costs: 38.22222222222222
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 160/625 episodes, total num timesteps 2576000/10000000, FPS 83.
+
+average_step_rewards is 0.903106689453125.
+some episodes done, average rewards: 689.3729556521146, average costs: 19.952380952380953
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 165/625 episodes, total num timesteps 2656000/10000000, FPS 85.
+
+average_step_rewards is 0.9729436635971069.
+some episodes done, average rewards: 733.9917472020583, average costs: 13.428571428571429
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 170/625 episodes, total num timesteps 2736000/10000000, FPS 87.
+
+average_step_rewards is 1.000605583190918.
+some episodes done, average rewards: 695.3659313626346, average costs: 2.739130434782609
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 175/625 episodes, total num timesteps 2816000/10000000, FPS 90.
+
+average_step_rewards is 0.9769222736358643.
+some episodes done, average rewards: 847.1064783511266, average costs: 11.842105263157896
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 180/625 episodes, total num timesteps 2896000/10000000, FPS 92.
+
+average_step_rewards is 1.0600155591964722.
+some episodes done, average rewards: 737.4828306433564, average costs: 7.444444444444445
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 185/625 episodes, total num timesteps 2976000/10000000, FPS 94.
+
+average_step_rewards is 1.0777769088745117.
+some episodes done, average rewards: 809.4069567664026, average costs: 2.9
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 190/625 episodes, total num timesteps 3056000/10000000, FPS 96.
+
+average_step_rewards is 1.0938581228256226.
+some episodes done, average rewards: 682.3761823224928, average costs: 16.0
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 195/625 episodes, total num timesteps 3136000/10000000, FPS 98.
+
+average_step_rewards is 1.0880261659622192.
+some episodes done, average rewards: 846.2778724786388, average costs: 8.7
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 200/625 episodes, total num timesteps 3216000/10000000, FPS 101.
+
+average_step_rewards is 1.1197062730789185.
+some episodes done, average rewards: 838.0036930941882, average costs: 40.421052631578945
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 205/625 episodes, total num timesteps 3296000/10000000, FPS 103.
+
+average_step_rewards is 1.1282141208648682.
+some episodes done, average rewards: 928.0766632688996, average costs: 7.15
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 210/625 episodes, total num timesteps 3376000/10000000, FPS 105.
+
+average_step_rewards is 1.1668519973754883.
+some episodes done, average rewards: 980.841943272973, average costs: 5.176470588235294
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 215/625 episodes, total num timesteps 3456000/10000000, FPS 107.
+
+average_step_rewards is 1.1712443828582764.
+some episodes done, average rewards: 906.5199103153225, average costs: 24.714285714285715
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 220/625 episodes, total num timesteps 3536000/10000000, FPS 109.
+
+average_step_rewards is 1.179260015487671.
+some episodes done, average rewards: 744.3981991415104, average costs: 15.423076923076923
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 225/625 episodes, total num timesteps 3616000/10000000, FPS 111.
+
+average_step_rewards is 1.2020612955093384.
+some episodes done, average rewards: 964.8421116932537, average costs: 16.444444444444443
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 230/625 episodes, total num timesteps 3696000/10000000, FPS 113.
+
+average_step_rewards is 1.2248010635375977.
+some episodes done, average rewards: 899.9824805471557, average costs: 16.166666666666668
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 235/625 episodes, total num timesteps 3776000/10000000, FPS 115.
+
+average_step_rewards is 1.2341755628585815.
+some episodes done, average rewards: 973.0225464996981, average costs: 35.10526315789474
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 240/625 episodes, total num timesteps 3856000/10000000, FPS 117.
+
+average_step_rewards is 1.234279751777649.
+some episodes done, average rewards: 883.0028434306824, average costs: 14.125
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 245/625 episodes, total num timesteps 3936000/10000000, FPS 119.
+
+average_step_rewards is 1.2471665143966675.
+some episodes done, average rewards: 1140.169955305663, average costs: 15.529411764705882
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 250/625 episodes, total num timesteps 4016000/10000000, FPS 121.
+
+average_step_rewards is 1.2922130823135376.
+some episodes done, average rewards: 1090.1640015868902, average costs: 33.8
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 255/625 episodes, total num timesteps 4096000/10000000, FPS 123.
+
+average_step_rewards is 1.2961143255233765.
+some episodes done, average rewards: 1094.3847926739113, average costs: 35.526315789473685
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 260/625 episodes, total num timesteps 4176000/10000000, FPS 125.
+
+average_step_rewards is 1.3294943571090698.
+some episodes done, average rewards: 975.0001562491361, average costs: 11.944444444444445
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 265/625 episodes, total num timesteps 4256000/10000000, FPS 127.
+
+average_step_rewards is 1.356433629989624.
+some episodes done, average rewards: 994.8797717186211, average costs: 10.681818181818182
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 270/625 episodes, total num timesteps 4336000/10000000, FPS 129.
+
+average_step_rewards is 1.3573434352874756.
+some episodes done, average rewards: 973.6643115925644, average costs: 20.75
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 275/625 episodes, total num timesteps 4416000/10000000, FPS 131.
+
+average_step_rewards is 1.3751767873764038.
+some episodes done, average rewards: 1122.4450965429073, average costs: 17.473684210526315
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 280/625 episodes, total num timesteps 4496000/10000000, FPS 133.
+
+average_step_rewards is 1.3900153636932373.
+some episodes done, average rewards: 1129.3706207590642, average costs: 19.789473684210527
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 285/625 episodes, total num timesteps 4576000/10000000, FPS 134.
+
+average_step_rewards is 1.4272665977478027.
+some episodes done, average rewards: 1172.8290080434565, average costs: 22.818181818181817
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 290/625 episodes, total num timesteps 4656000/10000000, FPS 136.
+
+average_step_rewards is 1.4564558267593384.
+some episodes done, average rewards: 1194.2409299408714, average costs: 5.5
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 295/625 episodes, total num timesteps 4736000/10000000, FPS 138.
+
+average_step_rewards is 1.459484577178955.
+some episodes done, average rewards: 1086.4476803121565, average costs: 13.4
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 300/625 episodes, total num timesteps 4816000/10000000, FPS 140.
+
+average_step_rewards is 1.4867675304412842.
+some episodes done, average rewards: 1318.5017365176752, average costs: 17.61111111111111
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 305/625 episodes, total num timesteps 4896000/10000000, FPS 141.
+
+average_step_rewards is 1.5240920782089233.
+some episodes done, average rewards: 1096.5763981566763, average costs: 6.761904761904762
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 310/625 episodes, total num timesteps 4976000/10000000, FPS 143.
+
+average_step_rewards is 1.545556664466858.
+some episodes done, average rewards: 1077.997778725028, average costs: 18.636363636363637
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 315/625 episodes, total num timesteps 5056000/10000000, FPS 144.
+
+average_step_rewards is 1.547867774963379.
+some episodes done, average rewards: 1507.5007001743236, average costs: 10.176470588235293
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 320/625 episodes, total num timesteps 5136000/10000000, FPS 146.
+
+average_step_rewards is 1.5990456342697144.
+some episodes done, average rewards: 1163.1385026492987, average costs: 8.0
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 325/625 episodes, total num timesteps 5216000/10000000, FPS 147.
+
+average_step_rewards is 1.6111748218536377.
+some episodes done, average rewards: 1253.86179197692, average costs: 8.117647058823529
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 330/625 episodes, total num timesteps 5296000/10000000, FPS 149.
+
+average_step_rewards is 1.6375253200531006.
+some episodes done, average rewards: 1298.7715698638665, average costs: 9.210526315789474
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 335/625 episodes, total num timesteps 5376000/10000000, FPS 150.
+
+average_step_rewards is 1.6536965370178223.
+some episodes done, average rewards: 1203.3487890124866, average costs: 6.6521739130434785
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 340/625 episodes, total num timesteps 5456000/10000000, FPS 146.
+
+average_step_rewards is 1.6941924095153809.
+some episodes done, average rewards: 979.8920857633883, average costs: 14.545454545454545
+
+ Scenario Ant-v2 Algo macpo Exp rnn updates 345/625 episodes, total num timesteps 5536000/10000000, FPS 147.
+
+average_step_rewards is 1.7073769569396973.
+some episodes done, average rewards: 1370.1296009576843, average costs: 8.105263157894736

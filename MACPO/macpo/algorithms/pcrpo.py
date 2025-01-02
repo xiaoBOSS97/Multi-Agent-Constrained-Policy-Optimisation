@@ -963,7 +963,7 @@ class PCRPO():
         #     final_grad = pcgrad_v1(reward_gradient=reward_grad, cost_gradient=cost_grad,
         #                                 safety_violation=safety_violation)
 
-        if aver_episode_costs_value > 10: 
+        if aver_episode_costs_value > 50: 
             final_grad = pcgrad(reward_grad, cost_grad)
         else:
             final_grad = reward_grad
