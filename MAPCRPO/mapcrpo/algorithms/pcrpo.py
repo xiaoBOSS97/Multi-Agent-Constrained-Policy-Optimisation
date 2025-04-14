@@ -797,6 +797,8 @@ class PCRPO():
         fraction_coef = self.fraction_coef
         fraction = self.line_search_fraction #0.5 # 0.5  # line search step size
         cost_grad = params - params
+        best_loss_improve = 0
+        best_params = params
 
         # print("fraction_coef", fraction_coef)
         for i in range(self.ls_step):
@@ -844,12 +846,12 @@ class PCRPO():
                                     old_actor=old_actor)
             kl = kl.mean()
 
-            if (kl < self.kl_threshold) and loss_improve < 0:
-                # print("fval after", newfval.item())
-                cost_grad = new_params - params
-                return True, loss_improve, expected_improve, ratio, cost_grad
+            if (kl < self.kl_threshold) and loss_improve < best_loss_improve:
+                best_loss_improve = loss_improve
+                best_params = new_params
 
-        return False, loss_improve, expected_improve, ratio, cost_grad
+        return True, best_loss_improve, expected_improve, ratio, best_params-params  
+
 
 
     def pcrpo_update(self, sample, aver_episode_costs_value, update_actor=True):
@@ -921,34 +923,6 @@ class PCRPO():
         if rescale_constraint_val == 0:
             rescale_constraint_val = self.EPS
 
-        # PCRPO
-        # optimize_reward = Optimize_reward(policy_net, get_value_loss, value_net, states, args, actions,
-        #                                           advantages)
-        # optimize_cost = Optimize_cost(get_cost_loss, cost_net, advantages_cost, policy_net, states, actions,
-        #                                 args)
-
-        # # todo: MO-optimization
-        # prev_policy_net = deepcopy(policy_net)
-        # prev_policy_net_data = get_flat_params_from(prev_policy_net)
-        # trpo_step(policy_net, optimize_reward.get_loss_up, optimize_reward.get_kl, args.max_kl, args.damping)
-        # grads1 = get_flat_params_from(policy_net) - prev_policy_net_data
-        # set_flat_params_to(policy_net, prev_policy_net_data)
-        # trpo_step(policy_net, optimize_cost.get_cost_loss_up, optimize_cost.get_kl, 0.05, args.damping)
-        # grads2 = get_flat_params_from(policy_net) - prev_policy_net_data
-
-        # # # Ca grads -> final_grad = cagrad(grads1, grads2)
-        # # todo: without momentum
-        # if args.algo == "PCRPO_4S_G_V0":
-        #     final_grad = pcgrad(grads1, grads2)
-        # if args.algo == "PCRPO_4S_G_V1":
-        #     safety_violation = True
-        #     final_grad = pcgrad_v1(reward_gradient=grads1, cost_gradient=grads2,
-        #                                 safety_violation=safety_violation)
-        # # final_grad = pcgrad(grads1, grads2)
-
-        # set_flat_params_to(policy_net, prev_policy_net_data + final_grad)
-
-
         # value trpo
         Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
         self.update_model(self.policy.actor, pre_actor_params)
@@ -956,21 +930,13 @@ class PCRPO():
         Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
 
         # TODO: add algo flag
-        # if self.args.algo == "PCRPO_4S_G_V0":
-        #     final_grad = pcgrad(reward_grad, cost_grad)
-        # if self.args.algo == "PCRPO_4S_G_V1":
-        #     safety_violation = True
-        #     final_grad = pcgrad_v1(reward_gradient=reward_grad, cost_gradient=cost_grad,
-        #                                 safety_violation=safety_violation)
-
-        if aver_episode_costs_value >= 10: 
+        if aver_episode_costs_value >= 15: 
+            final_grad = cost_grad
+        elif aver_episode_costs_value < 15 and aver_episode_costs_value > 5:
             final_grad = pcgrad(reward_grad, cost_grad)
-        else:
+        elif aver_episode_costs_value <= 5:
             final_grad = reward_grad
-        # final_grad = cost_grad
-        # safety_violation = True
-        # final_grad = pcgrad_v1(reward_gradient=reward_grad, cost_gradient=cost_grad,
-        #                             safety_violation=safety_violation)
+
         # update actor
         self.update_model(self.policy.actor, pre_actor_params + final_grad)
 
