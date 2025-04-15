@@ -96,7 +96,8 @@ class MujocoRunner(Runner):
                 # insert data into buffer
 
                 self.insert(data)
-            
+                
+            self.episode = episode
             aver_episode_costs = np.mean(done_episodes_costs)
 
             # compute return and update network

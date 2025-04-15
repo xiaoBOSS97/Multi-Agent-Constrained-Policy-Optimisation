@@ -184,6 +184,8 @@ def get_config():
     # replay buffer parameters
     parser.add_argument("--episode_length", type=int,
                         default=200, help="Max length for any episode")
+    parser.add_argument("--explore_num", type=int,
+                        default=100, help="Episode length for exploration")
 
     # network parameters
     parser.add_argument("--share_policy", action='store_false',
@@ -233,7 +235,9 @@ def get_config():
     parser.add_argument("--kl_threshold", type=float, default=0.01,
                         help='the threshold of kl-divergence (default: 0.01)')
     parser.add_argument("--safety_bound", type=float, default=0.1,
-                        help='the threshold of kl-divergence (default: 0.01)')
+                        help='cost threshold (default: 0.01)')
+    parser.add_argument("--slack_bound", type=float, default=0.1,
+                        help='slack parameter of safety bound (default: 0.01)')
 
     parser.add_argument("--ls_step", type=int, default=10,
                         help='number of line search (default: 10)')

@@ -32,6 +32,7 @@ class Runner(object):
         self.use_obs_instead_of_state = self.all_args.use_obs_instead_of_state
         self.num_env_steps = self.all_args.num_env_steps
         self.episode_length = self.all_args.episode_length
+        self.explore_num = self.all_args.explore_num
         self.n_rollout_threads = self.all_args.n_rollout_threads
         self.n_eval_rollout_threads = self.all_args.n_eval_rollout_threads
         self.use_linear_lr_decay = self.all_args.use_linear_lr_decay
@@ -40,6 +41,7 @@ class Runner(object):
         self.use_render = self.all_args.use_render
         self.recurrent_N = self.all_args.recurrent_N
         self.use_single_network = self.all_args.use_single_network
+        self.episode_num = int(self.num_env_steps) // self.episode_length // self.n_rollout_threads
         # interval
         self.save_interval = self.all_args.save_interval
         self.use_eval = self.all_args.use_eval
@@ -47,8 +49,9 @@ class Runner(object):
         self.log_interval = self.all_args.log_interval
         self.gamma = self.all_args.gamma
         self.use_popart = self.all_args.use_popart
-
+        self.episode = 0
         self.safty_bound = self.all_args.safty_bound
+        self.slack_bound = self.all_args.slack_bound
 
         # dir
         self.model_dir = self.all_args.model_dir
@@ -170,7 +173,7 @@ class Runner(object):
             # safe_buffer, cost_adv = self.buffer_filter(agent_id)
             # train_info = self.trainer[agent_id].train(safe_buffer, cost_adv)
 
-            train_info = self.trainer[agent_id].train(self.buffer[agent_id], aver_episode_costs)
+            train_info = self.trainer[agent_id].train(self.buffer[agent_id], aver_episode_costs, self.episode)
 
             new_actions_logprob, dist_entropy, action_mu, action_std = self.trainer[agent_id].policy.actor.evaluate_actions(
                 self.buffer[agent_id].obs[:-1].reshape(-1, *self.buffer[agent_id].obs.shape[2:]),

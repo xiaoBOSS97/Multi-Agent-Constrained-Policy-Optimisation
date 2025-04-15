@@ -43,9 +43,11 @@ class PCRPO():
         self.max_grad_norm = args.max_grad_norm
         self.huber_delta = args.huber_delta
         self.episode_length = args.episode_length
-
+        self.explore_num = args.explore_num
+        self.episode_num = args.episode_num
         self.kl_threshold = args.kl_threshold
         self.safety_bound = args.safety_bound
+        self.slack_bound = args.slack_bound
         self.ls_step = args.ls_step
         self.accept_ratio = args.accept_ratio
         self.EPS = args.EPS
@@ -854,7 +856,7 @@ class PCRPO():
 
 
 
-    def pcrpo_update(self, sample, aver_episode_costs_value, update_actor=True):
+    def pcrpo_update(self, sample, aver_episode_costs_value, episode, update_actor=True):
         """
         Update actor and critic networks.
         :param sample: (Tuple) contains data batch with which to update networks.
@@ -923,26 +925,39 @@ class PCRPO():
         if rescale_constraint_val == 0:
             rescale_constraint_val = self.EPS
 
-        # value trpo
-        Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
-        self.update_model(self.policy.actor, pre_actor_params)
-        # cost trpo
-        Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
+        # # value trpo
+        # Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
+        # self.update_model(self.policy.actor, pre_actor_params)
+        # # cost trpo
+        # Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
 
-        # TODO: add algo flag
-        if aver_episode_costs_value >= 15: 
-            final_grad = cost_grad
-        elif aver_episode_costs_value < 15 and aver_episode_costs_value > 5:
-            final_grad = pcgrad(reward_grad, cost_grad)
-        elif aver_episode_costs_value <= 5:
+        # TODO: add algo flag        
+        if episode < self.explore_num:
+            # only optimize reward during exploration
+            Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
             final_grad = reward_grad
+        else: 
+            slack = self.slack_bound * (1 - (episode-self.explore_num) / (self.episode_num-self.explore_num))
+            if aver_episode_costs_value >= self.slack_bound + slack: 
+                Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
+                final_grad = cost_grad
+            elif aver_episode_costs_value < self.slack_bound + slack and aver_episode_costs_value > self.slack_bound - slack:
+                # value trpo
+                Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
+                self.update_model(self.policy.actor, pre_actor_params)
+                # cost trpo
+                Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
+                final_grad = pcgrad(reward_grad, cost_grad)
+            elif aver_episode_costs_value <= self.slack_bound - slack:
+                Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
+                final_grad = reward_grad
 
         # update actor
         self.update_model(self.policy.actor, pre_actor_params + final_grad)
 
         return Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad, Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad
 
-    def train(self, buffer, aver_episode_costs, shared_buffer=None, update_actor=True):
+    def train(self, buffer, aver_episode_costs, episode, shared_buffer=None, update_actor=True):
         """
         Perform a training update using minibatch GD.
         :param buffer: (SharedReplayBuffer) buffer containing training data.
@@ -1006,7 +1021,7 @@ class PCRPO():
             # value_loss, critic_grad_norm, kl, loss_improve, expected_improve, dist_entropy, imp_weights, cost_loss, cost_grad_norm, whether_recover_policy_value, cost_preds_batch, cost_returns_barch, B_cost_loss_grad, lam, nu, g_step_dir, b_step_dir, x, action_mu, action_std, B_cost_loss_grad_dot \
             #     = self.trpo_update(sample, update_actor)
             Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad, Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad \
-                = self.pcrpo_update(sample, aver_episode_costs, update_actor)
+                = self.pcrpo_update(sample, aver_episode_costs, episode, update_actor)
 
 
             # train_info['value_loss'] += value_loss.item()
