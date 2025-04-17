@@ -42,6 +42,7 @@ class Runner(object):
         self.recurrent_N = self.all_args.recurrent_N
         self.use_single_network = self.all_args.use_single_network
         self.episode_num = int(self.num_env_steps) // self.episode_length // self.n_rollout_threads
+        self.all_args.episode_num = self.episode_num
         # interval
         self.save_interval = self.all_args.save_interval
         self.use_eval = self.all_args.use_eval
