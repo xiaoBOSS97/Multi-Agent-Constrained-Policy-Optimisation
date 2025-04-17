@@ -941,17 +941,17 @@ class PCRPO():
             final_grad = pcgrad(reward_grad, cost_grad)
         else: 
             slack = self.slack_bound * (1 - (episode-self.explore_num) / (self.episode_num-self.explore_num))
-            if aver_episode_costs_value >= self.slack_bound + slack: 
+            if aver_episode_costs_value >= self.safety_bound + slack: 
                 Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
                 final_grad = cost_grad
-            elif aver_episode_costs_value > self.slack_bound - slack and aver_episode_costs_value < self.slack_bound + slack:
+            elif aver_episode_costs_value > self.safety_bound - slack and aver_episode_costs_value < self.safety_bound + slack:
                 # value trpo
                 Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
                 self.update_model(self.policy.actor, pre_actor_params)
                 # cost trpo
                 Flag_cost, loss_improve_cost, expected_improve_cost, ratio_cost, cost_grad = self.trpo_step_cost(sample)
                 final_grad = pcgrad(reward_grad, cost_grad)
-            elif aver_episode_costs_value <= self.slack_bound - slack:
+            elif aver_episode_costs_value <= self.safety_bound - slack:
                 Flag_reward, loss_improve_reward, expected_improve_reward, ratio_reward, reward_grad = self.trpo_step_reward(sample)
                 final_grad = reward_grad
 

@@ -51,7 +51,7 @@ class Runner(object):
         self.gamma = self.all_args.gamma
         self.use_popart = self.all_args.use_popart
         self.episode = 0
-        self.safty_bound = self.all_args.safty_bound
+        self.safety_bound = self.all_args.safety_bound
         self.slack_bound = self.all_args.slack_bound
 
         # dir
@@ -214,7 +214,7 @@ class Runner(object):
 
         del_id = []
         for i in range(self.n_rollout_threads):
-            if constraints_value[i][0] > self.safty_bound:
+            if constraints_value[i][0] > self.safety_bound:
                 del_id.append(i)
 
         buffer_filterd = self.remove_episodes(agent_id, del_id)

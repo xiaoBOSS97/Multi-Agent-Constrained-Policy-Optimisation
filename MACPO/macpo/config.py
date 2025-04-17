@@ -303,7 +303,6 @@ def get_config():
     parser.add_argument("--model_dir", type=str, default=None, help="by default None. set the path to pretrained model.")
 
     # safe parameters fraction
-    parser.add_argument("--safty_bound", type=float, default=0.1, help="constraint upper bound")
     parser.add_argument("--line_search_fraction", type=float, default=0.5, help="line search step size")
     parser.add_argument("--g_step_dir_coef", type=float, default=0.1, help="rescale g")
     parser.add_argument("--b_step_dir_coef", type=float, default=0.1, help="rescale b")
