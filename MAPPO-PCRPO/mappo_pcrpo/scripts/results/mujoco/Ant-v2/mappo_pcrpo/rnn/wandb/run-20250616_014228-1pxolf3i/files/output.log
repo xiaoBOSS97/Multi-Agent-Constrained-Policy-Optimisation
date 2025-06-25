@@ -1,0 +1,51 @@
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({ankle3, hip3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({ankle3, hip3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip4, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip4, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip3, hip1})]
+share_observation_space:  [Box(31,), Box(31,)]
+observation_space:  [Box(31,), Box(31,)]
+action_space:  (Box(4,), Box(4,))
+Traceback (most recent call last):
+  File "train/train_mujoco.py", line 197, in <module>
+    main(sys.argv[1:])
+  File "train/train_mujoco.py", line 182, in main
+    runner.run()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/runner/separated/mujoco_runner_mappo_pcrpo.py", line 67, in run
+    train_infos = self.train()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/runner/separated/base_runner_mappo_pcrpo.py", line 166, in train
+    train_info = self.trainer[agent_id].train(self.buffer[agent_id])
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/algorithms/r_mappo/r_mappo_pcrpo.py", line 388, in train
+    diff_threshold=False)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/algorithms/r_mappo/r_mappo_pcrpo.py", line 274, in ppo_update
+    reward_grads = [param.grad.clone() for param in self.policy.actor.parameters()]
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/algorithms/r_mappo/r_mappo_pcrpo.py", line 274, in <listcomp>
+    reward_grads = [param.grad.clone() for param in self.policy.actor.parameters()]
+AttributeError: 'NoneType' object has no attribute 'clone'

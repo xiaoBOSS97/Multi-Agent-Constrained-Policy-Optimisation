@@ -1,0 +1,440 @@
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip4, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip3, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip3, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})][HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip3, hip1, hip2, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip2, hip4, hip3, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip2, hip3})]
+share_observation_space:  [Box(31,), Box(31,)]
+observation_space:  [Box(31,), Box(31,)]
+action_space:  (Box(4,), Box(4,))
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip3, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip1, hip4, hip3, hip2})]
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 0/625 episodes, total num timesteps 16000/10000000, FPS 2085.
+
+average_step_rewards is 0.4528091251850128.
+some episodes done, average rewards: 145.97101803418443, average costs: 16.529411764705884
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 5/625 episodes, total num timesteps 96000/10000000, FPS 2128.
+
+average_step_rewards is 0.4496442377567291.
+some episodes done, average rewards: 200.86965251435043, average costs: 41.35897435897436
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 10/625 episodes, total num timesteps 176000/10000000, FPS 2136.
+
+average_step_rewards is 0.4642801582813263.
+some episodes done, average rewards: 161.57751442970442, average costs: 42.361702127659576
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 15/625 episodes, total num timesteps 256000/10000000, FPS 2136.
+
+average_step_rewards is 0.48690521717071533.
+some episodes done, average rewards: 177.4154611090559, average costs: 59.476190476190474
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 20/625 episodes, total num timesteps 336000/10000000, FPS 2134.
+
+average_step_rewards is 0.4603537619113922.
+some episodes done, average rewards: 171.45671127573877, average costs: 36.11904761904762
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 25/625 episodes, total num timesteps 416000/10000000, FPS 2134.
+
+average_step_rewards is 0.4693208336830139.
+some episodes done, average rewards: 249.1684051539336, average costs: 81.02941176470588
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 30/625 episodes, total num timesteps 496000/10000000, FPS 2131.
+
+average_step_rewards is 0.47478893399238586.
+some episodes done, average rewards: 179.86311203330462, average costs: 48.08
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 35/625 episodes, total num timesteps 576000/10000000, FPS 2134.
+
+average_step_rewards is 0.4796619117259979.
+some episodes done, average rewards: 178.0773846749832, average costs: 43.16279069767442
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 40/625 episodes, total num timesteps 656000/10000000, FPS 2130.
+
+average_step_rewards is 0.4213789701461792.
+some episodes done, average rewards: 193.54990237178632, average costs: 33.825
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 45/625 episodes, total num timesteps 736000/10000000, FPS 2129.
+
+average_step_rewards is 0.48275133967399597.
+some episodes done, average rewards: 200.86137657368042, average costs: 31.225
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 50/625 episodes, total num timesteps 816000/10000000, FPS 2128.
+
+average_step_rewards is 0.4306173026561737.
+some episodes done, average rewards: 155.55459392759087, average costs: 28.488372093023255
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 55/625 episodes, total num timesteps 896000/10000000, FPS 2125.
+
+average_step_rewards is 0.4869072437286377.
+some episodes done, average rewards: 238.14944069408426, average costs: 56.8125
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 60/625 episodes, total num timesteps 976000/10000000, FPS 2122.
+
+average_step_rewards is 0.46997788548469543.
+some episodes done, average rewards: 139.39513524659634, average costs: 35.0
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 65/625 episodes, total num timesteps 1056000/10000000, FPS 2122.
+
+average_step_rewards is 0.47224241495132446.
+some episodes done, average rewards: 199.6139202360713, average costs: 38.833333333333336
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 70/625 episodes, total num timesteps 1136000/10000000, FPS 2120.
+
+average_step_rewards is 0.4680847227573395.
+some episodes done, average rewards: 213.04417891126343, average costs: 83.75
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 75/625 episodes, total num timesteps 1216000/10000000, FPS 2122.
+
+average_step_rewards is 0.46391552686691284.
+some episodes done, average rewards: 215.36990920660483, average costs: 53.0
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 80/625 episodes, total num timesteps 1296000/10000000, FPS 2121.
+
+average_step_rewards is 0.4370380640029907.
+some episodes done, average rewards: 205.664363077487, average costs: 22.78125
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 85/625 episodes, total num timesteps 1376000/10000000, FPS 2120.
+
+average_step_rewards is 0.4923160970211029.
+some episodes done, average rewards: 191.30493013167074, average costs: 36.625
+Process Process-10:
+Process Process-14:
+Process Process-5:
+Process Process-15:
+Process Process-8:
+Process Process-17:
+Process Process-16:
+Process Process-13:
+Process Process-7:
+Process Process-3:
+Process Process-2:
+Process Process-6:
+Process Process-4:
+Process Process-12:
+Process Process-11:
+Process Process-9:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 305, in shareworker
+    cmd, data = remote.recv()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 21, in step
+    return observation, reward, done, info
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+KeyboardInterrupt
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train/train_mujoco.py", line 197, in <module>
+    main(sys.argv[1:])
+  File "train/train_mujoco.py", line 182, in main
+    runner.run()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/runner/separated/mujoco_runner_mappo_pcrpo.py", line 43, in run
+    obs, share_obs, rewards, costs, dones, infos, _ = self.envs.step(actions)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 108, in step
+    return self.step_wait()
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 375, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 375, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 15, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3160, in ndim
+    return a.ndim
+AttributeError: 'int' object has no attribute 'ndim'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 180, in step
+    obs_n, reward_n, done_n, info_n = self.wrapped_env.step(flat_actions)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/core.py", line 285, in step
+    return self.env.step(self.action(action))
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/ant.py", line 49, in step
+    cost = np.clip(obj_cost + done_cost, 0, 1)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "<__array_function__ internals>", line 6, in clip
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2115, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 203, in step
+    return self.get_obs(), self.get_state(), rewards, dones, infos, self.get_avail_actions()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 216, in get_obs
+    obs_i = (obs_i - np.mean(obs_i)) / np.std(obs_i)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/env_wrappers.py", line 307, in shareworker
+    ob, s_ob, reward, done, info, available_actions = env.step(data)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 134, in _clip
+    if _clip_dep_is_scalar_nan(min):
+  File "<__array_function__ internals>", line 6, in std
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 94, in _clip_dep_is_scalar_nan
+    if ndim(a) != 0:
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3582, in std
+    **kwargs)
+  File "<__array_function__ internals>", line 6, in ndim
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 263, in _std
+    keepdims=keepdims, where=where)
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 203, in step
+    return self.get_obs(), self.get_state(), rewards, dones, infos, self.get_avail_actions()
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3161, in ndim
+    except AttributeError:
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 222, in _var
+    arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+  File "/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/envs/safety_ma_mujoco/safety_multiagent_mujoco/mujoco_multi.py", line 216, in get_obs
+    obs_i = (obs_i - np.mean(obs_i)) / np.std(obs_i)
+  File "<__array_function__ internals>", line 6, in mean
+KeyboardInterrupt
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3441, in mean
+    out=out, **kwargs)
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 167, in _mean
+    rcount = _count_reduce_items(arr, axis, keepdims=keepdims, where=where)
+KeyboardInterrupt
+  File "/home/zhi.zheng/anaconda3/envs/macpo/lib/python3.7/site-packages/numpy/core/_methods.py", line 76, in _count_reduce_items
+    items *= arr.shape[mu.normalize_axis_index(ax, arr.ndim)]
+KeyboardInterrupt

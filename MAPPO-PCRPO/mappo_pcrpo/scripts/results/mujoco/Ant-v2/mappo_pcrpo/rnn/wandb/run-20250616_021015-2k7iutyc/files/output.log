@@ -1,0 +1,660 @@
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})][HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})][HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})][HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip3, hip2, hip4})]
+[HyperEdge({ankle4, hip4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip2, hip3, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({ankle3, hip3}), HyperEdge({hip1, hip3, hip2, hip4})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({ankle2, hip2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({ankle1, hip1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip2, hip1, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip1, hip2, hip3})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip1, hip2})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip4, hip3, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+[HyperEdge({hip4, ankle4}), HyperEdge({hip1, ankle1}), HyperEdge({hip2, ankle2}), HyperEdge({hip3, ankle3}), HyperEdge({hip3, hip4, hip2, hip1})]
+share_observation_space:  [Box(31,), Box(31,)]
+observation_space:  [Box(31,), Box(31,)]
+action_space:  (Box(4,), Box(4,))
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 0/625 episodes, total num timesteps 16000/10000000, FPS 2077.
+
+average_step_rewards is 0.4618907868862152.
+some episodes done, average rewards: 131.50093907371794, average costs: 29.78787878787879
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 5/625 episodes, total num timesteps 96000/10000000, FPS 2122.
+
+average_step_rewards is 0.4563082754611969.
+some episodes done, average rewards: 205.02912873976393, average costs: 64.80555555555556
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 10/625 episodes, total num timesteps 176000/10000000, FPS 2122.
+
+average_step_rewards is 0.4523387551307678.
+some episodes done, average rewards: 179.81004298306388, average costs: 37.11904761904762
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 15/625 episodes, total num timesteps 256000/10000000, FPS 2122.
+
+average_step_rewards is 0.458433598279953.
+some episodes done, average rewards: 186.64808182882763, average costs: 43.391304347826086
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 20/625 episodes, total num timesteps 336000/10000000, FPS 2123.
+
+average_step_rewards is 0.4551279842853546.
+some episodes done, average rewards: 214.05031939346784, average costs: 78.44117647058823
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 25/625 episodes, total num timesteps 416000/10000000, FPS 2123.
+
+average_step_rewards is 0.44756805896759033.
+some episodes done, average rewards: 244.75875102432494, average costs: 83.07142857142857
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 30/625 episodes, total num timesteps 496000/10000000, FPS 2121.
+
+average_step_rewards is 0.4444669783115387.
+some episodes done, average rewards: 197.41746937007503, average costs: 50.97435897435897
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 35/625 episodes, total num timesteps 576000/10000000, FPS 2117.
+
+average_step_rewards is 0.47479724884033203.
+some episodes done, average rewards: 171.52952881523294, average costs: 42.51162790697674
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 40/625 episodes, total num timesteps 656000/10000000, FPS 2117.
+
+average_step_rewards is 0.44319334626197815.
+some episodes done, average rewards: 215.38073006916827, average costs: 73.21052631578948
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 45/625 episodes, total num timesteps 736000/10000000, FPS 2114.
+
+average_step_rewards is 0.48352137207984924.
+some episodes done, average rewards: 184.60300030533352, average costs: 47.054054054054056
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 50/625 episodes, total num timesteps 816000/10000000, FPS 2113.
+
+average_step_rewards is 0.48397549986839294.
+some episodes done, average rewards: 197.16168768862664, average costs: 38.1063829787234
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 55/625 episodes, total num timesteps 896000/10000000, FPS 2113.
+
+average_step_rewards is 0.47050774097442627.
+some episodes done, average rewards: 169.09032703754957, average costs: 43.18421052631579
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 60/625 episodes, total num timesteps 976000/10000000, FPS 2112.
+
+average_step_rewards is 0.481135755777359.
+some episodes done, average rewards: 163.41565647485146, average costs: 42.56363636363636
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 65/625 episodes, total num timesteps 1056000/10000000, FPS 2112.
+
+average_step_rewards is 0.4634573459625244.
+some episodes done, average rewards: 228.16170584697576, average costs: 45.82051282051282
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 70/625 episodes, total num timesteps 1136000/10000000, FPS 2112.
+
+average_step_rewards is 0.46566352248191833.
+some episodes done, average rewards: 270.0368850186108, average costs: 42.2
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 75/625 episodes, total num timesteps 1216000/10000000, FPS 2112.
+
+average_step_rewards is 0.46421173214912415.
+some episodes done, average rewards: 168.28613040391278, average costs: 46.28260869565217
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 80/625 episodes, total num timesteps 1296000/10000000, FPS 2110.
+
+average_step_rewards is 0.4447473883628845.
+some episodes done, average rewards: 171.53254221988774, average costs: 30.923076923076923
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 85/625 episodes, total num timesteps 1376000/10000000, FPS 2108.
+
+average_step_rewards is 0.4620041251182556.
+some episodes done, average rewards: 168.53820248050278, average costs: 16.55263157894737
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 90/625 episodes, total num timesteps 1456000/10000000, FPS 2106.
+
+average_step_rewards is 0.48399466276168823.
+some episodes done, average rewards: 194.23287782667458, average costs: 42.91111111111111
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 95/625 episodes, total num timesteps 1536000/10000000, FPS 2105.
+
+average_step_rewards is 0.45983922481536865.
+some episodes done, average rewards: 197.20256326629948, average costs: 27.64864864864865
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 100/625 episodes, total num timesteps 1616000/10000000, FPS 2103.
+
+average_step_rewards is 0.46495428681373596.
+some episodes done, average rewards: 183.73622136441472, average costs: 45.7027027027027
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 105/625 episodes, total num timesteps 1696000/10000000, FPS 2102.
+
+average_step_rewards is 0.4753336012363434.
+some episodes done, average rewards: 196.29259374262824, average costs: 40.05
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 110/625 episodes, total num timesteps 1776000/10000000, FPS 2100.
+
+average_step_rewards is 0.4591459333896637.
+some episodes done, average rewards: 221.77487428498702, average costs: 62.22222222222222
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 115/625 episodes, total num timesteps 1856000/10000000, FPS 2099.
+
+average_step_rewards is 0.4749794602394104.
+some episodes done, average rewards: 177.11198595222217, average costs: 29.958333333333332
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 120/625 episodes, total num timesteps 1936000/10000000, FPS 2100.
+
+average_step_rewards is 0.4785386323928833.
+some episodes done, average rewards: 186.72729240497208, average costs: 33.275
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 125/625 episodes, total num timesteps 2016000/10000000, FPS 2099.
+
+average_step_rewards is 0.4609430134296417.
+some episodes done, average rewards: 178.556896575551, average costs: 48.76086956521739
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 130/625 episodes, total num timesteps 2096000/10000000, FPS 2098.
+
+average_step_rewards is 0.4482717514038086.
+some episodes done, average rewards: 184.18432105687913, average costs: 29.25
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 135/625 episodes, total num timesteps 2176000/10000000, FPS 2097.
+
+average_step_rewards is 0.479394793510437.
+some episodes done, average rewards: 213.90306729229556, average costs: 77.57142857142857
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 140/625 episodes, total num timesteps 2256000/10000000, FPS 2096.
+
+average_step_rewards is 0.47351929545402527.
+some episodes done, average rewards: 155.8794313718615, average costs: 43.829787234042556
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 145/625 episodes, total num timesteps 2336000/10000000, FPS 2095.
+
+average_step_rewards is 0.48204782605171204.
+some episodes done, average rewards: 231.06909202843153, average costs: 27.310344827586206
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 150/625 episodes, total num timesteps 2416000/10000000, FPS 2095.
+
+average_step_rewards is 0.43240681290626526.
+some episodes done, average rewards: 216.66822425256106, average costs: 31.137931034482758
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 155/625 episodes, total num timesteps 2496000/10000000, FPS 2095.
+
+average_step_rewards is 0.44022107124328613.
+some episodes done, average rewards: 208.8062546898053, average costs: 83.88235294117646
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 160/625 episodes, total num timesteps 2576000/10000000, FPS 2095.
+
+average_step_rewards is 0.4230462610721588.
+some episodes done, average rewards: 172.65885679166627, average costs: 50.175
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 165/625 episodes, total num timesteps 2656000/10000000, FPS 2094.
+
+average_step_rewards is 0.4671865701675415.
+some episodes done, average rewards: 200.34311386848728, average costs: 40.951219512195124
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 170/625 episodes, total num timesteps 2736000/10000000, FPS 2094.
+
+average_step_rewards is 0.4721123278141022.
+some episodes done, average rewards: 186.5892867186508, average costs: 69.4
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 175/625 episodes, total num timesteps 2816000/10000000, FPS 2094.
+
+average_step_rewards is 0.44596320390701294.
+some episodes done, average rewards: 152.69102859641296, average costs: 33.5625
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 180/625 episodes, total num timesteps 2896000/10000000, FPS 2094.
+
+average_step_rewards is 0.4680311977863312.
+some episodes done, average rewards: 178.2802586966392, average costs: 57.45454545454545
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 185/625 episodes, total num timesteps 2976000/10000000, FPS 2094.
+
+average_step_rewards is 0.4480030834674835.
+some episodes done, average rewards: 149.34896694161216, average costs: 26.26086956521739
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 190/625 episodes, total num timesteps 3056000/10000000, FPS 2094.
+
+average_step_rewards is 0.4831363558769226.
+some episodes done, average rewards: 234.42114168169704, average costs: 50.714285714285715
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 195/625 episodes, total num timesteps 3136000/10000000, FPS 2094.
+
+average_step_rewards is 0.4589492082595825.
+some episodes done, average rewards: 190.33288142975917, average costs: 37.81818181818182
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 200/625 episodes, total num timesteps 3216000/10000000, FPS 2094.
+
+average_step_rewards is 0.44416144490242004.
+some episodes done, average rewards: 233.76030133826558, average costs: 58.266666666666666
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 205/625 episodes, total num timesteps 3296000/10000000, FPS 2094.
+
+average_step_rewards is 0.4364982843399048.
+some episodes done, average rewards: 197.35022772554612, average costs: 82.84848484848484
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 210/625 episodes, total num timesteps 3376000/10000000, FPS 2094.
+
+average_step_rewards is 0.423184335231781.
+some episodes done, average rewards: 193.75086358192897, average costs: 36.023809523809526
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 215/625 episodes, total num timesteps 3456000/10000000, FPS 2094.
+
+average_step_rewards is 0.4144347012042999.
+some episodes done, average rewards: 172.2155103742408, average costs: 50.48837209302326
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 220/625 episodes, total num timesteps 3536000/10000000, FPS 2093.
+
+average_step_rewards is 0.463623046875.
+some episodes done, average rewards: 191.10867664217346, average costs: 41.146341463414636
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 225/625 episodes, total num timesteps 3616000/10000000, FPS 2093.
+
+average_step_rewards is 0.4805489182472229.
+some episodes done, average rewards: 264.45643423254893, average costs: 89.29629629629629
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 230/625 episodes, total num timesteps 3696000/10000000, FPS 2094.
+
+average_step_rewards is 0.4712155759334564.
+some episodes done, average rewards: 226.94917525663337, average costs: 50.93939393939394
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 235/625 episodes, total num timesteps 3776000/10000000, FPS 2093.
+
+average_step_rewards is 0.4909972548484802.
+some episodes done, average rewards: 173.13005687753926, average costs: 28.95
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 240/625 episodes, total num timesteps 3856000/10000000, FPS 2093.
+
+average_step_rewards is 0.4528888463973999.
+some episodes done, average rewards: 182.26633617214475, average costs: 39.76744186046512
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 245/625 episodes, total num timesteps 3936000/10000000, FPS 2093.
+
+average_step_rewards is 0.46335890889167786.
+some episodes done, average rewards: 199.227566113504, average costs: 59.21621621621622
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 250/625 episodes, total num timesteps 4016000/10000000, FPS 2092.
+
+average_step_rewards is 0.4538714587688446.
+some episodes done, average rewards: 187.5973432426125, average costs: 46.37837837837838
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 255/625 episodes, total num timesteps 4096000/10000000, FPS 2092.
+
+average_step_rewards is 0.4513109028339386.
+some episodes done, average rewards: 190.45748121881164, average costs: 22.857142857142858
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 260/625 episodes, total num timesteps 4176000/10000000, FPS 2092.
+
+average_step_rewards is 0.4791076183319092.
+some episodes done, average rewards: 245.7490277590746, average costs: 66.78125
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 265/625 episodes, total num timesteps 4256000/10000000, FPS 2091.
+
+average_step_rewards is 0.47019141912460327.
+some episodes done, average rewards: 184.0166249134133, average costs: 25.210526315789473
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 270/625 episodes, total num timesteps 4336000/10000000, FPS 2091.
+
+average_step_rewards is 0.4534333348274231.
+some episodes done, average rewards: 153.89636612962835, average costs: 36.25
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 275/625 episodes, total num timesteps 4416000/10000000, FPS 2091.
+
+average_step_rewards is 0.45386889576911926.
+some episodes done, average rewards: 160.17602905376992, average costs: 21.80392156862745
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 280/625 episodes, total num timesteps 4496000/10000000, FPS 2091.
+
+average_step_rewards is 0.48374247550964355.
+some episodes done, average rewards: 224.54972433061067, average costs: 80.85714285714286
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 285/625 episodes, total num timesteps 4576000/10000000, FPS 2090.
+
+average_step_rewards is 0.45800259709358215.
+some episodes done, average rewards: 165.91326270115198, average costs: 40.292682926829265
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 290/625 episodes, total num timesteps 4656000/10000000, FPS 2091.
+
+average_step_rewards is 0.4454098045825958.
+some episodes done, average rewards: 239.3660171513337, average costs: 52.483870967741936
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 295/625 episodes, total num timesteps 4736000/10000000, FPS 2091.
+
+average_step_rewards is 0.45698681473731995.
+some episodes done, average rewards: 241.13516268425238, average costs: 115.58064516129032
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 300/625 episodes, total num timesteps 4816000/10000000, FPS 2090.
+
+average_step_rewards is 0.4554734230041504.
+some episodes done, average rewards: 188.6500212276076, average costs: 56.8974358974359
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 305/625 episodes, total num timesteps 4896000/10000000, FPS 2091.
+
+average_step_rewards is 0.46861621737480164.
+some episodes done, average rewards: 166.32808890016173, average costs: 29.146341463414632
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 310/625 episodes, total num timesteps 4976000/10000000, FPS 2091.
+
+average_step_rewards is 0.4618394672870636.
+some episodes done, average rewards: 190.42571589399196, average costs: 43.02325581395349
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 315/625 episodes, total num timesteps 5056000/10000000, FPS 2091.
+
+average_step_rewards is 0.46788913011550903.
+some episodes done, average rewards: 164.11951786598925, average costs: 21.22641509433962
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 320/625 episodes, total num timesteps 5136000/10000000, FPS 2091.
+
+average_step_rewards is 0.44138482213020325.
+some episodes done, average rewards: 170.83520772082045, average costs: 37.795918367346935
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 325/625 episodes, total num timesteps 5216000/10000000, FPS 2091.
+
+average_step_rewards is 0.4643489718437195.
+some episodes done, average rewards: 206.6752434528593, average costs: 62.525
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 330/625 episodes, total num timesteps 5296000/10000000, FPS 2091.
+
+average_step_rewards is 0.45686399936676025.
+some episodes done, average rewards: 176.07653778827373, average costs: 40.48780487804878
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 335/625 episodes, total num timesteps 5376000/10000000, FPS 2091.
+
+average_step_rewards is 0.4634677469730377.
+some episodes done, average rewards: 184.5911094406389, average costs: 66.75
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 340/625 episodes, total num timesteps 5456000/10000000, FPS 2091.
+
+average_step_rewards is 0.46682557463645935.
+some episodes done, average rewards: 178.5720591235116, average costs: 22.204545454545453
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 345/625 episodes, total num timesteps 5536000/10000000, FPS 2090.
+
+average_step_rewards is 0.4602259695529938.
+some episodes done, average rewards: 175.92436215389165, average costs: 36.82051282051282
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 350/625 episodes, total num timesteps 5616000/10000000, FPS 2090.
+
+average_step_rewards is 0.4534090757369995.
+some episodes done, average rewards: 178.23979380079476, average costs: 51.79545454545455
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 355/625 episodes, total num timesteps 5696000/10000000, FPS 2091.
+
+average_step_rewards is 0.44087690114974976.
+some episodes done, average rewards: 187.2461168534292, average costs: 32.09756097560975
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 360/625 episodes, total num timesteps 5776000/10000000, FPS 2091.
+
+average_step_rewards is 0.464307963848114.
+some episodes done, average rewards: 215.36163331943797, average costs: 70.11764705882354
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 365/625 episodes, total num timesteps 5856000/10000000, FPS 2091.
+
+average_step_rewards is 0.4379574656486511.
+some episodes done, average rewards: 170.90272587573034, average costs: 78.29268292682927
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 370/625 episodes, total num timesteps 5936000/10000000, FPS 2091.
+
+average_step_rewards is 0.46847423911094666.
+some episodes done, average rewards: 190.3272236628159, average costs: 51.68292682926829
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 375/625 episodes, total num timesteps 6016000/10000000, FPS 2091.
+
+average_step_rewards is 0.4544346332550049.
+some episodes done, average rewards: 199.55926561169673, average costs: 61.193548387096776
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 380/625 episodes, total num timesteps 6096000/10000000, FPS 2091.
+
+average_step_rewards is 0.4643826186656952.
+some episodes done, average rewards: 147.9935958145174, average costs: 22.044444444444444
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 385/625 episodes, total num timesteps 6176000/10000000, FPS 2091.
+
+average_step_rewards is 0.43448418378829956.
+some episodes done, average rewards: 217.4495424333444, average costs: 48.55555555555556
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 390/625 episodes, total num timesteps 6256000/10000000, FPS 2090.
+
+average_step_rewards is 0.4719375669956207.
+some episodes done, average rewards: 200.78215025825887, average costs: 26.0
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 395/625 episodes, total num timesteps 6336000/10000000, FPS 2090.
+
+average_step_rewards is 0.4457288086414337.
+some episodes done, average rewards: 170.88495609061988, average costs: 21.146341463414632
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 400/625 episodes, total num timesteps 6416000/10000000, FPS 2090.
+
+average_step_rewards is 0.48273608088493347.
+some episodes done, average rewards: 179.3225947356851, average costs: 48.578947368421055
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 405/625 episodes, total num timesteps 6496000/10000000, FPS 2090.
+
+average_step_rewards is 0.4095757305622101.
+some episodes done, average rewards: 140.7851316839999, average costs: 15.914893617021276
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 410/625 episodes, total num timesteps 6576000/10000000, FPS 2090.
+
+average_step_rewards is 0.4593200087547302.
+some episodes done, average rewards: 218.7626302370984, average costs: 56.206896551724135
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 415/625 episodes, total num timesteps 6656000/10000000, FPS 2090.
+
+average_step_rewards is 0.46549299359321594.
+some episodes done, average rewards: 178.9979910218866, average costs: 51.680851063829785
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 420/625 episodes, total num timesteps 6736000/10000000, FPS 2090.
+
+average_step_rewards is 0.4773423373699188.
+some episodes done, average rewards: 192.03348909861776, average costs: 45.21951219512195
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 425/625 episodes, total num timesteps 6816000/10000000, FPS 2090.
+
+average_step_rewards is 0.4816591143608093.
+some episodes done, average rewards: 166.2019016871648, average costs: 37.333333333333336
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 430/625 episodes, total num timesteps 6896000/10000000, FPS 2090.
+
+average_step_rewards is 0.4749046564102173.
+some episodes done, average rewards: 213.18343825395073, average costs: 63.31578947368421
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 435/625 episodes, total num timesteps 6976000/10000000, FPS 2090.
+
+average_step_rewards is 0.481626033782959.
+some episodes done, average rewards: 233.3023500706105, average costs: 74.65625
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 440/625 episodes, total num timesteps 7056000/10000000, FPS 2089.
+
+average_step_rewards is 0.46159204840660095.
+some episodes done, average rewards: 188.43053269350438, average costs: 53.76190476190476
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 445/625 episodes, total num timesteps 7136000/10000000, FPS 2089.
+
+average_step_rewards is 0.47814881801605225.
+some episodes done, average rewards: 208.74065879046782, average costs: 25.483870967741936
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 450/625 episodes, total num timesteps 7216000/10000000, FPS 2089.
+
+average_step_rewards is 0.4727362096309662.
+some episodes done, average rewards: 201.2261663402582, average costs: 45.05
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 455/625 episodes, total num timesteps 7296000/10000000, FPS 2089.
+
+average_step_rewards is 0.4631018340587616.
+some episodes done, average rewards: 170.9709960876499, average costs: 32.69767441860465
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 460/625 episodes, total num timesteps 7376000/10000000, FPS 2089.
+
+average_step_rewards is 0.45026350021362305.
+some episodes done, average rewards: 178.71998800483289, average costs: 45.1219512195122
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 465/625 episodes, total num timesteps 7456000/10000000, FPS 2089.
+
+average_step_rewards is 0.4562421143054962.
+some episodes done, average rewards: 188.04742628450444, average costs: 28.435897435897434
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 470/625 episodes, total num timesteps 7536000/10000000, FPS 2089.
+
+average_step_rewards is 0.4650029242038727.
+some episodes done, average rewards: 224.0011426097728, average costs: 73.86111111111111
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 475/625 episodes, total num timesteps 7616000/10000000, FPS 2088.
+
+average_step_rewards is 0.4802740514278412.
+some episodes done, average rewards: 171.34112581320912, average costs: 48.58139534883721
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 480/625 episodes, total num timesteps 7696000/10000000, FPS 2088.
+
+average_step_rewards is 0.4564656913280487.
+some episodes done, average rewards: 182.0508644717714, average costs: 22.512820512820515
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 485/625 episodes, total num timesteps 7776000/10000000, FPS 2088.
+
+average_step_rewards is 0.44991469383239746.
+some episodes done, average rewards: 156.5354153453594, average costs: 16.9
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 490/625 episodes, total num timesteps 7856000/10000000, FPS 2088.
+
+average_step_rewards is 0.45559048652648926.
+some episodes done, average rewards: 163.16776550014845, average costs: 10.26086956521739
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 495/625 episodes, total num timesteps 7936000/10000000, FPS 2088.
+
+average_step_rewards is 0.43517735600471497.
+some episodes done, average rewards: 164.13026522640166, average costs: 42.77777777777778
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 500/625 episodes, total num timesteps 8016000/10000000, FPS 2088.
+
+average_step_rewards is 0.465189129114151.
+some episodes done, average rewards: 164.0148264964061, average costs: 29.122448979591837
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 505/625 episodes, total num timesteps 8096000/10000000, FPS 2088.
+
+average_step_rewards is 0.47589126229286194.
+some episodes done, average rewards: 221.88871347065935, average costs: 63.75
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 510/625 episodes, total num timesteps 8176000/10000000, FPS 2088.
+
+average_step_rewards is 0.47304823994636536.
+some episodes done, average rewards: 216.2699701874743, average costs: 75.27272727272727
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 515/625 episodes, total num timesteps 8256000/10000000, FPS 2088.
+
+average_step_rewards is 0.4938586950302124.
+some episodes done, average rewards: 166.9153535688474, average costs: 42.61224489795919
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 520/625 episodes, total num timesteps 8336000/10000000, FPS 2088.
+
+average_step_rewards is 0.4567432999610901.
+some episodes done, average rewards: 268.67940721998855, average costs: 65.82758620689656
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 525/625 episodes, total num timesteps 8416000/10000000, FPS 2088.
+
+average_step_rewards is 0.4723924696445465.
+some episodes done, average rewards: 195.2800654751595, average costs: 62.15384615384615
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 530/625 episodes, total num timesteps 8496000/10000000, FPS 2088.
+
+average_step_rewards is 0.48401331901550293.
+some episodes done, average rewards: 229.40456458606715, average costs: 21.896551724137932
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 535/625 episodes, total num timesteps 8576000/10000000, FPS 2088.
+
+average_step_rewards is 0.45249438285827637.
+some episodes done, average rewards: 187.81245275533033, average costs: 57.225
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 540/625 episodes, total num timesteps 8656000/10000000, FPS 2088.
+
+average_step_rewards is 0.4729234278202057.
+some episodes done, average rewards: 175.3952840738979, average costs: 59.53488372093023
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 545/625 episodes, total num timesteps 8736000/10000000, FPS 2087.
+
+average_step_rewards is 0.46673086285591125.
+some episodes done, average rewards: 165.7999831684016, average costs: 26.125
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 550/625 episodes, total num timesteps 8816000/10000000, FPS 2087.
+
+average_step_rewards is 0.4619159400463104.
+some episodes done, average rewards: 190.08600968401794, average costs: 33.92307692307692
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 555/625 episodes, total num timesteps 8896000/10000000, FPS 2087.
+
+average_step_rewards is 0.4576539099216461.
+some episodes done, average rewards: 203.24651770443865, average costs: 59.72093023255814
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 560/625 episodes, total num timesteps 8976000/10000000, FPS 2087.
+
+average_step_rewards is 0.4691901206970215.
+some episodes done, average rewards: 186.13068266309187, average costs: 27.2972972972973
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 565/625 episodes, total num timesteps 9056000/10000000, FPS 2087.
+
+average_step_rewards is 0.4682835042476654.
+some episodes done, average rewards: 148.12756844272468, average costs: 41.48837209302326
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 570/625 episodes, total num timesteps 9136000/10000000, FPS 2087.
+
+average_step_rewards is 0.49223998188972473.
+some episodes done, average rewards: 206.86236834683774, average costs: 87.58333333333333
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 575/625 episodes, total num timesteps 9216000/10000000, FPS 2087.
+
+average_step_rewards is 0.46688365936279297.
+some episodes done, average rewards: 197.48290640932694, average costs: 62.51428571428571
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 580/625 episodes, total num timesteps 9296000/10000000, FPS 2087.
+
+average_step_rewards is 0.4520835876464844.
+some episodes done, average rewards: 191.47765285070548, average costs: 44.142857142857146
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 585/625 episodes, total num timesteps 9376000/10000000, FPS 2087.
+
+average_step_rewards is 0.482481986284256.
+some episodes done, average rewards: 220.07578102732103, average costs: 94.91891891891892
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 590/625 episodes, total num timesteps 9456000/10000000, FPS 2087.
+
+average_step_rewards is 0.4927520751953125.
+some episodes done, average rewards: 192.08018537802837, average costs: 34.95
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 595/625 episodes, total num timesteps 9536000/10000000, FPS 2087.
+
+average_step_rewards is 0.48201534152030945.
+some episodes done, average rewards: 211.54714050311867, average costs: 58.724137931034484
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 600/625 episodes, total num timesteps 9616000/10000000, FPS 2087.
+
+average_step_rewards is 0.4838448464870453.
+some episodes done, average rewards: 159.676534472239, average costs: 18.22222222222222
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 605/625 episodes, total num timesteps 9696000/10000000, FPS 2087.
+
+average_step_rewards is 0.44106778502464294.
+some episodes done, average rewards: 204.79103427263186, average costs: 54.73809523809524
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 610/625 episodes, total num timesteps 9776000/10000000, FPS 2086.
+
+average_step_rewards is 0.45775291323661804.
+some episodes done, average rewards: 210.3759452688791, average costs: 29.475
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 615/625 episodes, total num timesteps 9856000/10000000, FPS 2086.
+
+average_step_rewards is 0.4636782109737396.
+some episodes done, average rewards: 197.99568363616814, average costs: 47.743589743589745
+
+ Scenario Ant-v2 Algo mappo_pcrpo Exp rnn updates 620/625 episodes, total num timesteps 9936000/10000000, FPS 2086.
+
+average_step_rewards is 0.46035584807395935.
+some episodes done, average rewards: 206.3964862851063, average costs: 62.567567567567565

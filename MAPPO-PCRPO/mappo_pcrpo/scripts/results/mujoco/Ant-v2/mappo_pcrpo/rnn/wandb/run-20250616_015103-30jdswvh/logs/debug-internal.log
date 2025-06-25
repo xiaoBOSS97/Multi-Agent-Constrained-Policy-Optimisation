@@ -1,0 +1,148 @@
+2025-06-16 01:51:03,475 INFO    MainThread:602354 [internal.py:wandb_internal():62] W&B internal server running at pid: 602354
+2025-06-16 01:51:03,477 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: check_version
+2025-06-16 01:51:03,477 INFO    WriterThread:602354 [datastore.py:open_for_write():76] open: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/run-30jdswvh.wandb
+2025-06-16 01:51:03,477 DEBUG   SenderThread:602354 [sender.py:send():88] send: header
+2025-06-16 01:51:03,477 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:03,477 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: check_version
+2025-06-16 01:51:03,478 DEBUG   Thread-4  :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): pypi.org:443
+2025-06-16 01:51:03,491 DEBUG   Thread-4  :602354 [connectionpool.py:_make_request():465] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 141061
+2025-06-16 01:51:03,502 DEBUG   SenderThread:602354 [sender.py:send():88] send: run
+2025-06-16 01:51:03,507 DEBUG   SenderThread:602354 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=<valid stream>)
+2025-06-16 01:51:03,515 DEBUG   SenderThread:602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:03,738 DEBUG   SenderThread:602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 1168
+2025-06-16 01:51:03,741 INFO    SenderThread:602354 [dir_watcher.py:__init__():167] watching files in: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files
+2025-06-16 01:51:03,742 INFO    SenderThread:602354 [sender.py:_start_run_threads():464] run started: 30jdswvh with start time 1750031463
+2025-06-16 01:51:03,746 DEBUG   SenderThread:602354 [sender.py:send():88] send: summary
+2025-06-16 01:51:03,746 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: run_start
+2025-06-16 01:51:03,747 INFO    SenderThread:602354 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:51:03,759 DEBUG   HandlerThread:602354 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=<valid stream>)
+2025-06-16 01:51:03,764 DEBUG   HandlerThread:602354 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=None)
+2025-06-16 01:51:03,783 DEBUG   SenderThread:602354 [sender.py:send():88] send: files
+2025-06-16 01:51:03,783 INFO    SenderThread:602354 [sender.py:_save_file():542] saving file wandb-metadata.json with policy now
+2025-06-16 01:51:03,784 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:51:03,784 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:03,784 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: status
+2025-06-16 01:51:03,785 DEBUG   SenderThread:602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:03,787 DEBUG   Thread-11 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:03,963 DEBUG   Thread-11 :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 722
+2025-06-16 01:51:03,965 DEBUG   Thread-11 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:04,032 DEBUG   SenderThread:602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:51:04,225 DEBUG   Thread-11 :602354 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/30jdswvh/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235103Z&X-Goog-Expires=86399&X-Goog-Signature=4c6dd6e1e66c019c5521f19f27111faefc354d70c629640b54c5d73d0eba02c179c051ffc1b51ea7c7e5f739d77e0e6ad239a7b2c45c427fdd9df29eded758ae7519d1259c20667c8a230dfd74a4c1ffbfca24607c35729e5772d50730944aab12bd15368372177178cf5d92089fde16682a18486b67b2b5b3895aab70cb07428d3777c236947c3d05f0fd61dc39e5d58c954a806cda4c528ecb06d51c9f6dfe84cba9acc131d7a5c42530284eaa31a9270e93bcae815f1af926f79335d2f17f041f32a0668443b1a5df11097f3ccb428058f5fcad0226be39d828818d847c9c5321cc73515de792ca20d5d40e9e8b2c12476806a06e134aa8b3f38699b05663&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:04,225 INFO    Thread-11 :602354 [upload_job.py:push():112] Uploaded file /tmp/tmp2061g8kzwandb/1r6qew43-wandb-metadata.json
+2025-06-16 01:51:04,743 INFO    Thread-8  :602354 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/requirements.txt
+2025-06-16 01:51:04,743 INFO    Thread-8  :602354 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-summary.json
+2025-06-16 01:51:04,743 INFO    Thread-8  :602354 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-metadata.json
+2025-06-16 01:51:04,743 INFO    Thread-8  :602354 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/output.log
+2025-06-16 01:51:06,034 DEBUG   Thread-5  :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:06,217 DEBUG   Thread-5  :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/30jdswvh/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:07,149 DEBUG   SenderThread:602354 [sender.py:send():88] send: stats
+2025-06-16 01:51:08,920 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: poll_exit
+2025-06-16 01:51:08,920 DEBUG   SenderThread:602354 [sender.py:send():88] send: exit
+2025-06-16 01:51:08,920 INFO    SenderThread:602354 [sender.py:send_exit():156] handling exit code: 1
+2025-06-16 01:51:08,920 INFO    SenderThread:602354 [sender.py:send_exit():164] send defer
+2025-06-16 01:51:08,920 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,920 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: poll_exit
+2025-06-16 01:51:08,920 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:08,920 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 0
+2025-06-16 01:51:08,920 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,920 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:08,920 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 0
+2025-06-16 01:51:08,920 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 1
+2025-06-16 01:51:08,920 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:08,921 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 1
+2025-06-16 01:51:08,974 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 1
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 2
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send():88] send: stats
+2025-06-16 01:51:08,975 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:08,975 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 2
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 2
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 3
+2025-06-16 01:51:08,975 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:08,975 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 3
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send():88] send: summary
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 3
+2025-06-16 01:51:08,975 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 4
+2025-06-16 01:51:08,975 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:08,975 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 4
+2025-06-16 01:51:08,975 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:08,976 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:08,976 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 4
+2025-06-16 01:51:08,976 INFO    SenderThread:602354 [dir_watcher.py:finish():280] shutting down directory watcher
+2025-06-16 01:51:09,084 DEBUG   Thread-5  :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/30jdswvh/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:09,743 INFO    Thread-8  :602354 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-summary.json
+2025-06-16 01:51:09,743 INFO    SenderThread:602354 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/output.log
+2025-06-16 01:51:09,743 INFO    SenderThread:602354 [dir_watcher.py:finish():309] scan: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files
+2025-06-16 01:51:09,743 INFO    SenderThread:602354 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-metadata.json wandb-metadata.json
+2025-06-16 01:51:09,743 INFO    SenderThread:602354 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/config.yaml config.yaml
+2025-06-16 01:51:09,744 INFO    SenderThread:602354 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/requirements.txt requirements.txt
+2025-06-16 01:51:09,744 INFO    SenderThread:602354 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-summary.json wandb-summary.json
+2025-06-16 01:51:09,744 INFO    SenderThread:602354 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/output.log output.log
+2025-06-16 01:51:09,745 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 5
+2025-06-16 01:51:09,747 DEBUG   Thread-14 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:09,747 DEBUG   Thread-12 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:09,747 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:09,747 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 5
+2025-06-16 01:51:09,749 DEBUG   Thread-13 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:09,749 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:09,749 DEBUG   Thread-15 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:09,749 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:09,749 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 5
+2025-06-16 01:51:09,749 INFO    SenderThread:602354 [file_pusher.py:finish():169] shutting down file pusher
+2025-06-16 01:51:09,749 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 6
+2025-06-16 01:51:09,749 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:09,750 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 6
+2025-06-16 01:51:09,750 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:09,750 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:09,750 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 6
+2025-06-16 01:51:09,911 DEBUG   Thread-5  :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/30jdswvh/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:09,938 DEBUG   Thread-15 :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 710
+2025-06-16 01:51:09,940 DEBUG   Thread-15 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:09,940 DEBUG   Thread-12 :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 711
+2025-06-16 01:51:09,942 DEBUG   Thread-12 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:09,983 DEBUG   Thread-14 :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 721
+2025-06-16 01:51:09,985 DEBUG   Thread-14 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:10,005 DEBUG   Thread-13 :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 715
+2025-06-16 01:51:10,007 DEBUG   Thread-13 :602354 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:10,067 DEBUG   Thread-5  :602354 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/30jdswvh/file_stream HTTP/1.1" 200 211
+2025-06-16 01:51:10,068 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 7
+2025-06-16 01:51:10,069 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:10,069 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 7
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:10,069 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 7
+2025-06-16 01:51:10,069 INFO    SenderThread:602354 [sender.py:send_request_defer():209] send defer: 8
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send():88] send: final
+2025-06-16 01:51:10,069 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 01:51:10,069 INFO    HandlerThread:602354 [handler.py:handle_request_defer():68] handle defer: 8
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send():88] send: footer
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:10,069 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: defer
+2025-06-16 01:51:10,069 INFO    SenderThread:602354 [sender.py:send_request_defer():173] handle sender defer: 8
+2025-06-16 01:51:10,207 DEBUG   Thread-15 :602354 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/30jdswvh/output.log?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235109Z&X-Goog-Expires=86399&X-Goog-Signature=5717429a757d2b9b2328b9537b2bcbd96328a70491f169dfa531013dbe380c67e8a4ffe43cdb038c84bd47cffc03d0193c8477376ab1675f7eb73cb5e0aebcc6fc9bf5fe0c1b049fbc4e3aada2f7db3359d0a04627bcddc03dd790d71468468a4cc955f3e9d1548cfd7bd3797ac349f10e059837ebd3eab670d19293ec91e45a6075aad34da2ca94d3122500d79c67f2041e6b70c0360a7600399bb0e9573d0225df480b9b0b672901c001f7257259401a06f5b515dce267fe9193663bb208b7673f43843cbff921b47af47ffb80a3c0b118cb705dab94bbe68ae744733e508f86721a7c06ec8cd59a8a5dc968949b405d3563e9439d324bfd3bb2db0f2c9302&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:10,208 INFO    Thread-15 :602354 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/output.log
+2025-06-16 01:51:10,211 DEBUG   Thread-12 :602354 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/30jdswvh/config.yaml?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235109Z&X-Goog-Expires=86399&X-Goog-Signature=0605393d412b828aabd4d6b62ca132125748096c129bc66c49885a717b594c3485c1bbe42781d67edce00086555ac495aa3334667667e9b56bb2be3b4ec2567b1c34a1a87020e51235022a2fc0a46eed19da1a57f8af98d44c2bdab0c623e0a45183c13c6c0c038462aa714e1164fe4a19f463dbd69de9269eda33153fc47ad2c6b970fb0afd1c5036fe069c817dddb2daacc3763d5e0b5ed034794dd9c9bcc98d39930e65464f9fbfcf4641fd632933af640e24fbea113844e2d9724d0631d60f5b2cd74d1f146c70a1dd68e3f2d6d6ca6e792e7e189e246b9509d80d4d3e9f2ca68948af514379eba8084dc7137e803587d7961c29c51939dad24a595d6655&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:10,212 INFO    Thread-12 :602354 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/config.yaml
+2025-06-16 01:51:10,227 DEBUG   Thread-14 :602354 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/30jdswvh/wandb-summary.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235109Z&X-Goog-Expires=86399&X-Goog-Signature=73573829f41f71599947e8016f0c9b8ff543f0700f7d9e4255f9dad44b6e030306d605592dd74114c171f64a4c2fac593a430a455097391f5b96a792527328f89a7949ba6058345f69c50e1a258bedfb59bfb135d8b4f6b06d1c95d617eb113f8512c5f1fd54fe7f3cebcb06d48402ca19ab58d5d48615435ceeca0ff825990be756611b60e42a93077fc262806508ceae238c5fd311e177a956218762e1b4b04091b59644ae6f63665c0f7d2ad4a2398e86491580bad349f3ef13aa42d876f93358dd6193102ea97f2465c6fd7c9563359ff7e71a0c33aa3f01afe52bffd669b2370c5522e850f40c8909b1c8c3903e69f68b00cdc35a7f4c5198ac65d8324c&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:10,228 INFO    Thread-14 :602354 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/wandb-summary.json
+2025-06-16 01:51:10,302 DEBUG   Thread-13 :602354 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/30jdswvh/requirements.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235109Z&X-Goog-Expires=86399&X-Goog-Signature=9781e6695457cce6c361e64352c166f56977c32f867c64922f55f254c0cf88b12a1fac6d0d5407131b27f57408a7404eb7dbd0fa735f36e5aa77937f967eb56cf12f3393832c18ac04b24ab12e638c7bc705372001f5eb1c6cbb6c5be021732defbd03d345fda400b88193297a8683146020e009d862338f951cf2fe4ffb35dcd078de0a9327f558a8bcedf541d9b49b650f724988f213f8d6d6b97328d0351a108a27405fa9b2d49122172703fede6f5e0fe7466997401f297f5849130301b21952fb67507d8e5966cc708ff103450e2f3a3df2d5b90435c73207469ddd7074caa5c0e45d96405662a2c0223d184c62fb9c3f32865c2602bf5d7b8f17f5f205&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:10,304 INFO    Thread-13 :602354 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/files/requirements.txt
+2025-06-16 01:51:10,923 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: poll_exit
+2025-06-16 01:51:10,923 DEBUG   SenderThread:602354 [sender.py:send():88] send: request
+2025-06-16 01:51:10,923 DEBUG   SenderThread:602354 [sender.py:send_request():97] send_request: poll_exit
+2025-06-16 01:51:10,923 INFO    SenderThread:602354 [file_pusher.py:join():174] waiting for file pusher
+2025-06-16 01:51:10,924 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: get_summary
+2025-06-16 01:51:10,924 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: sampled_history
+2025-06-16 01:51:10,925 DEBUG   HandlerThread:602354 [handler.py:handle_request():54] handle_request: shutdown
+2025-06-16 01:51:10,925 INFO    HandlerThread:602354 [handler.py:finish():267] shutting down handler
+2025-06-16 01:51:11,069 INFO    WriterThread:602354 [datastore.py:close():257] close: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015103-30jdswvh/run-30jdswvh.wandb
+2025-06-16 01:51:11,924 INFO    SenderThread:602354 [sender.py:finish():583] shutting down sender
+2025-06-16 01:51:11,924 INFO    SenderThread:602354 [file_pusher.py:finish():169] shutting down file pusher
+2025-06-16 01:51:11,924 INFO    SenderThread:602354 [file_pusher.py:join():174] waiting for file pusher
+2025-06-16 01:51:11,924 INFO    MainThread:602354 [internal.py:handle_exit():137] Internal process exited

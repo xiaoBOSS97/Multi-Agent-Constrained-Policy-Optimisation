@@ -1,0 +1,1002 @@
+2025-06-16 01:51:24,938 INFO    MainThread:604921 [internal.py:wandb_internal():62] W&B internal server running at pid: 604921
+2025-06-16 01:51:24,939 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: check_version
+2025-06-16 01:51:24,939 INFO    WriterThread:604921 [datastore.py:open_for_write():76] open: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/run-2mhrctn7.wandb
+2025-06-16 01:51:24,939 DEBUG   SenderThread:604921 [sender.py:send():88] send: header
+2025-06-16 01:51:24,939 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:51:24,939 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: check_version
+2025-06-16 01:51:24,940 DEBUG   Thread-4  :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): pypi.org:443
+2025-06-16 01:51:24,953 DEBUG   Thread-4  :604921 [connectionpool.py:_make_request():465] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 141061
+2025-06-16 01:51:24,964 DEBUG   SenderThread:604921 [sender.py:send():88] send: run
+2025-06-16 01:51:24,970 DEBUG   SenderThread:604921 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=<valid stream>)
+2025-06-16 01:51:24,976 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:25,173 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 1170
+2025-06-16 01:51:25,176 INFO    SenderThread:604921 [dir_watcher.py:__init__():167] watching files in: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files
+2025-06-16 01:51:25,177 INFO    SenderThread:604921 [sender.py:_start_run_threads():464] run started: 2mhrctn7 with start time 1750031484
+2025-06-16 01:51:25,182 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: run_start
+2025-06-16 01:51:25,182 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:51:25,182 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:51:25,194 DEBUG   HandlerThread:604921 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=<valid stream>)
+2025-06-16 01:51:25,200 DEBUG   HandlerThread:604921 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation, universal_newlines=False, shell=None, istream=None)
+2025-06-16 01:51:25,217 DEBUG   SenderThread:604921 [sender.py:send():88] send: files
+2025-06-16 01:51:25,217 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-metadata.json with policy now
+2025-06-16 01:51:25,220 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:51:25,220 DEBUG   Thread-11 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:25,220 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:51:25,220 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:51:25,221 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:25,403 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:51:25,459 DEBUG   Thread-11 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 714
+2025-06-16 01:51:25,462 DEBUG   Thread-11 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 01:51:25,712 DEBUG   Thread-11 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250615%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250615T235125Z&X-Goog-Expires=86399&X-Goog-Signature=58e72f9c6604cce4530b65e19777992beae9aa63038845dd7dbd44e62e205955ec40605d2aa7f9bfbea49a6a634fea276d2618fdefd8e8b9b67b5b1c8ba490f9b7b1028a05be39733979a194651aaacba2ee47a0165352e5c1a52257dba3aaede9863f9a394545ed3731704a14c60cc29b12bfaf6019678bf59ef2cad0f574a61e37ea7de789e639ee426f11744c9b78e328f0eb2a9c2ae2ffb54c5009b040e5ce0866d656a804fa74eb51e6e7700abbdab4008c2ca8dc57ec88d3d1260c1efd933ee4124c7e25962c50f8d659d8e11a468ee3bd8fcf03b6f061195caafb790b74810c955dcfcad35099799d27db7980be765a48dbfc2dfa55a6a0977bcad6dc&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 01:51:25,713 INFO    Thread-11 :604921 [upload_job.py:push():112] Uploaded file /tmp/tmpbch5lojywandb/21ksmdds-wandb-metadata.json
+2025-06-16 01:51:26,178 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-metadata.json
+2025-06-16 01:51:26,178 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:51:26,178 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/requirements.txt
+2025-06-16 01:51:26,178 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:51:27,405 DEBUG   Thread-5  :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:27,576 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:28,581 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:30,774 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:33,041 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:33,196 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:34,179 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:51:34,179 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:51:34,179 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:51:34,179 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:51:34,179 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_created():215] file/dir created: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:51:35,599 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:37,504 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:37,680 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:40,405 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:51:40,405 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:51:40,405 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:51:40,406 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:40,635 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:51:41,180 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:51:41,180 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:51:41,180 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:51:41,180 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:51:41,970 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:42,128 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:46,434 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:46,592 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:49,182 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:51:49,182 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:51:49,182 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:51:49,182 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:51:50,906 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:51,086 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:55,370 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:55,530 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:51:55,643 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:51:55,643 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:51:55,643 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:51:55,644 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:51:55,902 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:51:56,184 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:51:56,184 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:51:56,184 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:51:56,184 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:51:59,832 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:51:59,978 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:04,186 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:04,186 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:04,186 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:04,186 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:04,297 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:04,457 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:08,763 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:08,932 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:10,887 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:52:10,888 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:52:10,888 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:52:10,904 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:52:10,904 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:52:10,904 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:52:10,905 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:52:11,052 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:11,078 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:11,187 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:52:13,219 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:13,228 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:15,389 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:17,687 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:17,864 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:19,189 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:19,189 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:19,189 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:19,189 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:22,157 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:22,331 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:26,079 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:52:26,079 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:52:26,079 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:52:26,081 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:52:26,192 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:26,192 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:26,192 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:26,192 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:26,282 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:52:26,621 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:31,088 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:34,194 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:34,194 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:34,194 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:34,194 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:35,552 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:35,741 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:40,015 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:41,196 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:41,196 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:41,196 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:41,196 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:41,283 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:52:41,284 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:52:41,284 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:52:41,285 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:52:41,529 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:52:44,476 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:48,143 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:52:48,144 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:52:48,145 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:48,198 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:52:48,317 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:52:48,948 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:53,411 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:52:56,200 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:52:56,200 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:52:56,200 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:52:56,200 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:52:56,530 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:52:56,531 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:52:56,531 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:52:56,532 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:52:56,778 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:52:57,872 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:02,342 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:02,520 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:53:03,202 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:03,202 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:03,203 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:03,203 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:06,804 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:11,206 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:11,206 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:11,206 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:11,206 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:11,263 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:11,780 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:53:11,780 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:53:11,780 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:53:11,781 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:53:12,036 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:53:15,721 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:15,881 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:53:18,208 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:18,208 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:18,208 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:18,208 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:20,186 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:24,645 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:25,620 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:53:25,621 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:53:25,621 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:26,210 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:53:27,037 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:53:27,037 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:53:27,037 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:53:27,039 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:53:27,240 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:53:29,111 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:29,267 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:53:33,212 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:33,212 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:33,212 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:33,212 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:33,579 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:38,042 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:41,214 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:41,214 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:41,214 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:41,214 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:42,242 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:53:42,242 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:53:42,243 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:53:42,244 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:53:42,480 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:53:42,506 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:42,661 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:53:46,965 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:48,215 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:48,216 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:48,216 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:48,216 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:51,428 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:55,896 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:53:56,075 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:53:56,217 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:53:56,217 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:53:56,218 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:53:56,218 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:53:57,482 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:53:57,482 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:53:57,482 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:53:57,483 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:53:57,696 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:54:00,357 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:03,174 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:54:03,174 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:54:03,174 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:03,219 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:54:04,816 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:09,275 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:09,448 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:54:11,221 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:11,221 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:11,221 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:11,221 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:12,698 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:54:12,698 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:54:12,698 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:54:12,699 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:54:12,863 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:54:13,737 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:18,203 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:18,223 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:18,223 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:18,223 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:18,223 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:22,664 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:22,833 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:54:26,225 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:26,225 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:26,225 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:26,225 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:27,131 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:27,866 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:54:27,866 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:54:27,866 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:54:27,867 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:54:28,121 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:54:31,599 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:33,227 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:33,227 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:33,227 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:33,227 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:36,058 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:36,228 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:54:40,516 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:40,689 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:54:40,689 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:54:40,689 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:41,230 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:54:43,122 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:54:43,122 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:54:43,123 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:54:43,124 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:54:43,325 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:54:44,978 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:49,232 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:49,233 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:49,233 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:49,233 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:49,444 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:49,609 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:54:53,906 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:54:56,234 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:54:56,234 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:54:56,234 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:54:56,234 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:54:58,327 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:54:58,327 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:54:58,327 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:54:58,328 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:54:58,488 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:54:58,489 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:02,832 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:02,991 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:55:04,236 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:04,236 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:04,236 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:04,236 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:07,304 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:11,238 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:11,238 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:11,238 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:11,238 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:11,769 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:13,490 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:55:13,490 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:55:13,490 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:55:13,491 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:55:13,730 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:55:16,230 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:16,395 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:55:18,431 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:55:18,431 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:55:18,432 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:19,240 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:55:20,696 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:25,156 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:26,242 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:26,242 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:26,242 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:26,242 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:28,732 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:55:28,732 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:55:28,732 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:55:28,733 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:55:28,960 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:55:29,621 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:29,804 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:55:34,081 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:34,244 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:34,244 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:34,244 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:34,244 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:38,553 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:41,245 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:41,245 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:41,245 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:41,246 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:43,019 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:43,175 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:55:43,962 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:55:43,962 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:55:43,962 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:55:43,963 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:55:44,187 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:55:47,487 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:48,247 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:48,247 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:48,247 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:48,247 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:51,949 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:55,618 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:55:55,619 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:55:55,619 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:55:55,777 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:55:56,249 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:55:56,409 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:55:59,190 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:55:59,190 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:55:59,191 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:55:59,192 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:55:59,432 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:56:00,871 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:03,252 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:03,252 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:03,252 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:03,252 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:05,332 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:09,792 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:09,973 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:56:11,254 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:11,254 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:11,254 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:11,254 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:14,260 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:14,434 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:56:14,434 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:56:14,434 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:56:14,436 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:56:14,683 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:56:18,718 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:19,257 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:19,257 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:19,257 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:19,257 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:23,180 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:23,343 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:56:26,259 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:26,259 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:26,259 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:26,259 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:27,639 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:29,684 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:56:29,684 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:56:29,684 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:56:29,686 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:56:29,880 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:56:32,104 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:33,716 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:56:33,716 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:56:33,716 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:34,261 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:56:36,570 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:41,031 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:42,264 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:42,264 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:42,264 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:42,264 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:44,882 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:56:44,882 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:56:44,883 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:56:44,884 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:56:45,131 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:56:45,494 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:49,266 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:49,266 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:49,266 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:49,266 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:49,956 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:54,424 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:56:54,591 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:56:57,268 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:56:57,268 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:56:57,268 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:56:57,268 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:56:58,884 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:00,133 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:57:00,134 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:57:00,134 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:57:00,135 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:57:00,303 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:57:03,352 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:04,269 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:04,269 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:04,270 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:04,270 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:07,818 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:11,383 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:57:11,383 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:57:11,384 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:57:12,271 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:12,271 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:12,272 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:57:12,272 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:12,272 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:12,272 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:57:12,282 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:15,305 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:57:15,305 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:57:15,305 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:57:15,307 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:57:15,561 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:57:16,750 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:19,273 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:19,273 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:19,273 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:19,273 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:21,211 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:25,671 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:25,836 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:57:27,275 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:27,275 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:27,275 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:27,275 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:30,133 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:30,563 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:57:30,563 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:57:30,563 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:57:30,564 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:57:30,809 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:57:34,592 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:35,277 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:35,277 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:35,277 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:35,277 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:39,054 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:42,279 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:42,279 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:42,279 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:42,279 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:43,516 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:45,810 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:57:45,810 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:57:45,810 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:57:45,812 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:57:45,985 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:57:47,978 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:49,157 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:57:49,157 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:57:49,158 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:49,281 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:57:52,446 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:56,909 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:57:57,074 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:57:57,283 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:57:57,283 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:57:57,283 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:57:57,283 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:00,987 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:58:00,987 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:58:00,987 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:58:00,988 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:58:01,232 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:58:01,373 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:05,285 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:05,285 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:05,285 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:05,285 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:05,836 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:10,305 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:12,287 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:12,287 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:12,287 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:12,287 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:14,768 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:16,242 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:58:16,243 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:58:16,243 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:58:16,244 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:58:16,439 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:58:19,226 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:20,289 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:20,289 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:20,289 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:20,289 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:23,689 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:27,259 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:58:27,259 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:58:27,260 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:58:27,290 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:27,291 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:27,291 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:58:27,291 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:27,291 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:27,291 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:58:27,429 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:58:28,148 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:31,441 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:58:31,442 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:58:31,442 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:58:31,443 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:58:31,706 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:58:32,609 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:35,293 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:35,293 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:35,293 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:35,293 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:37,072 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:41,534 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:43,295 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:43,295 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:43,295 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:43,295 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:46,013 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:46,708 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:58:46,708 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:58:46,708 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:58:46,709 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:58:46,893 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:58:50,297 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:50,297 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:50,297 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:50,297 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:50,481 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:54,941 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:58,299 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:58:58,299 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:58:58,299 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:58:58,299 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:58:59,406 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:58:59,568 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:59:01,894 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:59:01,895 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:59:01,895 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:59:01,896 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:59:02,087 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:59:03,878 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:05,551 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:59:05,551 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:59:05,551 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:06,301 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:59:08,349 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:12,812 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:13,303 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:13,303 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:13,303 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:13,303 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:17,088 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:59:17,088 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:59:17,088 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:59:17,089 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:59:17,302 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:59:17,303 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:21,305 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:21,305 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:21,305 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:21,305 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:21,743 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:26,209 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:28,307 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:28,307 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:28,307 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:28,307 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:30,679 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:30,850 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 01:59:32,304 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:59:32,304 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:59:32,304 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:59:32,306 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:59:32,491 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:59:35,144 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:36,309 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:36,309 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:36,309 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:36,309 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:39,606 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:43,357 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 01:59:43,357 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 01:59:43,357 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 01:59:44,076 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:44,311 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 01:59:47,493 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 01:59:47,493 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 01:59:47,493 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 01:59:47,494 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 01:59:47,752 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 01:59:48,538 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:51,313 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:51,313 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:51,313 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:51,313 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 01:59:53,001 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:57,471 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 01:59:58,314 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 01:59:58,315 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 01:59:58,315 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 01:59:58,315 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:01,931 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:02,083 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:00:02,754 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:00:02,755 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:00:02,755 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:00:02,756 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:00:03,006 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:00:06,317 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:06,317 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:06,317 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:06,317 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:06,394 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:10,856 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:14,319 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:14,319 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:14,319 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:14,319 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:15,320 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:18,008 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:00:18,008 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:00:18,008 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:00:18,009 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:00:18,270 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:00:19,781 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:21,423 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 02:00:21,423 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:00:21,423 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:00:22,321 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:22,321 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:22,321 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 02:00:22,321 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:22,321 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:22,322 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 02:00:24,254 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:28,716 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:29,324 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:29,325 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:29,325 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:29,325 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:33,183 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:33,272 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:00:33,272 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:00:33,272 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:00:33,273 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:00:33,348 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:00:33,498 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:00:36,326 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:36,326 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:36,326 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:36,326 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:37,647 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:42,109 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:44,328 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:44,328 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:44,328 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:44,329 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:46,572 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:48,500 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:00:48,500 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:00:48,500 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:00:48,501 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:00:48,711 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:00:51,031 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:51,330 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:51,330 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:51,330 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:51,330 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:55,492 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:00:58,765 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 02:00:58,766 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:00:58,766 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:00:59,332 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 02:00:59,952 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:03,713 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:01:03,713 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:01:03,714 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:01:03,715 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:01:03,918 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:01:04,416 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:04,572 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:01:07,334 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:07,334 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:07,334 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:07,334 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:08,877 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:13,337 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:14,336 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:14,336 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:14,336 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:14,336 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:17,798 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:18,943 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:01:18,943 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:01:18,943 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:01:18,944 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:01:19,195 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:01:22,258 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:22,339 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:22,339 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:22,339 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:22,339 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:26,723 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:29,342 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:29,342 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:29,342 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:29,342 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:31,187 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:34,199 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:01:34,199 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:01:34,199 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:01:34,201 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:01:34,440 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:01:35,651 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:35,825 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:01:36,694 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 02:01:36,694 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:01:36,694 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:37,344 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 02:01:40,118 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:44,345 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:44,346 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:44,346 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:44,346 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:44,578 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:49,043 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:49,442 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:01:49,442 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:01:49,442 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:01:49,443 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:01:49,634 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:01:52,348 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:01:52,348 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:01:52,348 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:01:52,348 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:01:53,506 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:01:57,969 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:02:00,350 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:02:00,350 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:02:00,350 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:02:00,350 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:02:02,436 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:02:04,635 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: status
+2025-06-16 02:02:04,635 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:04,635 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: status
+2025-06-16 02:02:04,637 DEBUG   SenderThread:604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:04,894 DEBUG   SenderThread:604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 47
+2025-06-16 02:02:06,904 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:02:07,073 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:02:07,351 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:02:07,352 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:02:07,352 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:02:07,352 INFO    Thread-8  :604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:02:11,369 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:02:14,723 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 02:02:14,723 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:02:14,724 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:02:15,071 WARNING MainThread:604921 [internal.py:wandb_internal():116] Internal process interrupt: 1
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send():88] send: history
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:02:15,075 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: poll_exit
+2025-06-16 02:02:15,075 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send():88] send: exit
+2025-06-16 02:02:15,075 INFO    SenderThread:604921 [sender.py:send_exit():156] handling exit code: 255
+2025-06-16 02:02:15,075 INFO    SenderThread:604921 [sender.py:send_exit():164] send defer
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: poll_exit
+2025-06-16 02:02:15,075 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,075 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 0
+2025-06-16 02:02:15,075 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,076 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,076 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 0
+2025-06-16 02:02:15,076 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 1
+2025-06-16 02:02:15,076 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,076 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 1
+2025-06-16 02:02:15,122 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,122 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,122 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 1
+2025-06-16 02:02:15,122 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 2
+2025-06-16 02:02:15,122 DEBUG   SenderThread:604921 [sender.py:send():88] send: stats
+2025-06-16 02:02:15,122 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,122 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 2
+2025-06-16 02:02:15,122 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,122 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,122 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 2
+2025-06-16 02:02:15,122 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 3
+2025-06-16 02:02:15,122 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,122 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 3
+2025-06-16 02:02:15,123 DEBUG   SenderThread:604921 [sender.py:send():88] send: summary
+2025-06-16 02:02:15,123 INFO    SenderThread:604921 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2025-06-16 02:02:15,123 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,123 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,123 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 3
+2025-06-16 02:02:15,123 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 4
+2025-06-16 02:02:15,123 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,123 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 4
+2025-06-16 02:02:15,123 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,123 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,123 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 4
+2025-06-16 02:02:15,123 INFO    SenderThread:604921 [dir_watcher.py:finish():280] shutting down directory watcher
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:_on_file_modified():228] file/dir modified: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 02:02:15,353 INFO    SenderThread:604921 [dir_watcher.py:finish():309] scan: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files
+2025-06-16 02:02:15,354 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-metadata.json wandb-metadata.json
+2025-06-16 02:02:15,354 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/config.yaml config.yaml
+2025-06-16 02:02:15,354 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt critic_agent0.pt
+2025-06-16 02:02:15,354 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt actor_agent0.pt
+2025-06-16 02:02:15,356 DEBUG   Thread-12 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,356 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/requirements.txt requirements.txt
+2025-06-16 02:02:15,357 DEBUG   Thread-13 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,357 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json wandb-summary.json
+2025-06-16 02:02:15,358 DEBUG   Thread-14 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,360 DEBUG   Thread-15 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,360 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log output.log
+2025-06-16 02:02:15,360 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt actor_agent1.pt
+2025-06-16 02:02:15,360 INFO    SenderThread:604921 [dir_watcher.py:finish():315] scan save: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt critic_agent1.pt
+2025-06-16 02:02:15,360 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 5
+2025-06-16 02:02:15,362 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,362 DEBUG   Thread-17 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,363 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 5
+2025-06-16 02:02:15,363 DEBUG   Thread-16 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,365 DEBUG   Thread-18 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,365 DEBUG   Thread-19 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+2025-06-16 02:02:15,366 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,366 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,366 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 5
+2025-06-16 02:02:15,366 INFO    SenderThread:604921 [file_pusher.py:finish():169] shutting down file pusher
+2025-06-16 02:02:15,366 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 6
+2025-06-16 02:02:15,366 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,366 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 6
+2025-06-16 02:02:15,366 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,366 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,366 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 6
+2025-06-16 02:02:15,536 DEBUG   Thread-17 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 712
+2025-06-16 02:02:15,538 DEBUG   Thread-17 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,543 DEBUG   Thread-19 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 718
+2025-06-16 02:02:15,544 DEBUG   Thread-13 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 710
+2025-06-16 02:02:15,545 DEBUG   Thread-19 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,547 DEBUG   Thread-13 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,567 DEBUG   Thread-16 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 721
+2025-06-16 02:02:15,569 DEBUG   Thread-16 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,581 DEBUG   Thread-12 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 712
+2025-06-16 02:02:15,583 DEBUG   Thread-12 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,596 DEBUG   Thread-18 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 713
+2025-06-16 02:02:15,597 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 208
+2025-06-16 02:02:15,599 DEBUG   Thread-18 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,615 DEBUG   Thread-14 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 722
+2025-06-16 02:02:15,617 DEBUG   Thread-14 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,620 DEBUG   Thread-15 :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 712
+2025-06-16 02:02:15,622 DEBUG   Thread-15 :604921 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-06-16 02:02:15,786 DEBUG   Thread-5  :604921 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/xiaoboss/Ant-v2_2x4/2mhrctn7/file_stream HTTP/1.1" 200 210
+2025-06-16 02:02:15,788 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 7
+2025-06-16 02:02:15,788 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,788 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 7
+2025-06-16 02:02:15,788 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,788 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,788 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 7
+2025-06-16 02:02:15,788 INFO    SenderThread:604921 [sender.py:send_request_defer():209] send defer: 8
+2025-06-16 02:02:15,789 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: defer
+2025-06-16 02:02:15,789 DEBUG   SenderThread:604921 [sender.py:send():88] send: final
+2025-06-16 02:02:15,789 INFO    HandlerThread:604921 [handler.py:handle_request_defer():68] handle defer: 8
+2025-06-16 02:02:15,789 DEBUG   SenderThread:604921 [sender.py:send():88] send: footer
+2025-06-16 02:02:15,789 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:15,789 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: defer
+2025-06-16 02:02:15,789 INFO    SenderThread:604921 [sender.py:send_request_defer():173] handle sender defer: 8
+2025-06-16 02:02:15,811 DEBUG   Thread-16 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/wandb-summary.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=7e915c8621054032e62c4b4ce70912480b429627bd0ffafd005fe1bd8e400cfe2746729d42561be56d5d9cb374367bdde734b2817437bf6565b5d1465515f6e018542fc1592fdc2cfd0acc6b7c9ce26f2ed8938c376be1e7c185183b1f6b33d39a4dd6c19dc6b9ab95c896a2397cc8500626ff249fd8d1b9ec44cace4a35a51a1c8e418933a67b7f55fb045fe232c674507c0c4bbc3bbce4761572dff5b182cc2fe7b921b71dcb7367e91f855a5413a3ce7a1a875c34da9cd08f40596e3f3933a266fee43b100ccbc1ab29fda051307491ee9ea687a948d16ab97f18fb964a28d6993f71b2afadab446f89f5f9152722d1c774c72d834637114901eebabbca5e&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,812 INFO    Thread-16 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/wandb-summary.json
+2025-06-16 02:02:15,826 DEBUG   Thread-12 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/config.yaml?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=619084af96794b89ed726f60e5aa52b41dc793e764e110e7fd37777e0bd050a03f293b6221b5a5ca2ad58f8052933a849fb5ca3057200937c5a1bfa40debb48e3ca4fe3d7fe92f05133d1ce3dac12e7536fe64d48025c3b47a965b57ee9e1e3ff24f1fb46403c504b2f8f91fc97bc35670edc3e63938b6bc0b900a287c2335570fc4a985ef1b605a543e9f974ed5a7ea04cbb8d9281d92339a5853c09db4c6d25bd2aa990f24cea5a42b12330283f1fc53769a2e30b506ea59be7c3b90f2c9e1d805c6f560cc51119c1bfafa495163d717d46aa75c508bc77dcce004f9a23d3aaad3596f4ef6adb46d4ae5b5d53b878b50309655c2c863b14d9c61956a442702&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,827 INFO    Thread-12 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/config.yaml
+2025-06-16 02:02:15,882 DEBUG   Thread-15 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/requirements.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=6a9742f9e48a1107e4dfdb742bf8e2460dafc39f9100ae568b49606ed0e2223fda8892a7573d1908bb15c5e7653715c52e4d03e998a9c796d1b1f43b0506a8efd8e6e2bb5dedb0bec1f2de2db487c5f1fb0461689342011712e7e928fc11da4502b00553eb614f2f72a393677da6aaa3a75e0ef09406fd09c50ca742f6bddfc0881d79aebc278249e249e2d9cfd338e738b6556f584fe76d96ebcd95f1d45408424d765e591771b34849b547ea753e0429cd011e413afdc912ea70b8c9d9b64cf0c6993e15e62d11f2fabb4dd6d7c0c0fc7ec075a82754696f9182c51186fa54737cb1892689d77236955778edec2962881ee71bd8faf6cf9caf063316780994&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,883 INFO    Thread-15 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/requirements.txt
+2025-06-16 02:02:15,901 DEBUG   Thread-17 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/output.log?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=3732a80899ad71b70059cc2655eb693b01b9b1fd422199740707acd4fd88c27f49da6880c33a56934c7206349eecca9946d644b26ea8b4cda50baaca2760da5ed7d97dfc5f86dcd04a67a57f430749d3c943bec309fa05084a49d2705e2f4493e40ba926cd857ebd6590a661af168c0362a0e98a1f206e8bdd2d2406f16945cbf1d6d5a290bc159088cf0e1e6f10ad35dc80ce5baeb08322ede4e897f312f8f3d0e06a511fb0725736085ce440cbe886515341975b4e5e878bebdfaae451f51cd5ba4d23aa6ab43c30ffb6b534922d3c3928a3fcdbbdd04d3b2512e6e9e73a6e07fa33e7ec158062f8d63cec178ffab6979b272f9e50fc207ef4f9cad3ab34e7&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,902 INFO    Thread-17 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/output.log
+2025-06-16 02:02:15,946 DEBUG   Thread-19 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/critic_agent1.pt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=636c2565153efd1f555b92e6150ad2045cfaff19869faf3bad887ad9b6763ad20b948daf7c0819bdc57afb660f827f3a032ddd977c664362a530d9654ef6699725dec5ec8b27c660d291d94420bf21bae8c261b1fb2935b17eb000225ac09067cb979c779da5f15c88bf7643ac45168b17a7a500b8dbdf7abc5cc913a20fc654fbe29a985249ae0b0f5f70ccd51a6883d7761d88960dff7ddacb3e2a7fb8bee9d25deb768472b42611f32bbfa50374022a365fd6fc807048fb780452f0b4eda5615580e9b917a5ca3513d31dff378c4d2a8b681e49578d2840d380f86f42d70b21673a378a07549a83af52039db016e15ed38c6fdb6c2c8de40ee3ee2a64c69c&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,947 DEBUG   Thread-13 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/critic_agent0.pt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=41396456e7ea444c0dcba18e89318a91ac352c9410cbee71251630c0adbccb3ce8813c9534358264c46e38ca0e66e0129e616e81fa5e62c95b831732ac14f8cdf07030ddc26902e2d643bbb3d93ddc631cee1439f149f49a0c2ca559663729f20c776f97c2532a41a55b10777add038384f2988889f4236e8cd1995ab60dd47beec8e165a14f22a36b9d32a18e1de647e8f05a3f5fcd01a6717d5271e919a1ab2f11d61107e3da013713d751488c11f91a9badfb475c0687e14a7aedc3f30e3f0c298ee7535c7a288d1c4a559d59ea9c533d594c54e0218329fa3bad6a1e7906e8f187898873b38f856c84d963c868f931f0e10d6f64d72654e4472a17b5a464&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,947 INFO    Thread-19 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent1.pt
+2025-06-16 02:02:15,948 INFO    Thread-13 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/critic_agent0.pt
+2025-06-16 02:02:15,996 DEBUG   Thread-18 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/actor_agent1.pt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=bcd0bbb2033da79868a747154a3fc69440a2a4bc19ee7adc38e739da0d662cbd7bdcb4cde2830a388347f465fb94b4fa1061c4579fe393308e16b4c0c6f50c7e5eeac1cb7b0a472c629fca746a102855bc0a1b78138fc2f3682f3e1a4332ddbc0e45507aeeb1935ae5723b4b171c189023f34e91b95d617c3494eb2bc1639ca1e051612933c95300b31ec7cf376cec5b7f1ef706ef71cdb94f4a93a1f7ef9e3d93caafd131bb2fe3b6ff6d41c366071dce3474c2b4e67286bbc45800268dcc88c500df47fdb8bf4ec29678083dd64a8e962df27bfa5ed75e56eef4b79444992dd1ba32d308f0be23130fcd27a5cb18c634e28d9d5f400797db5c27d69efc661b&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:15,997 INFO    Thread-18 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent1.pt
+2025-06-16 02:02:16,004 DEBUG   Thread-14 :604921 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/xiaoboss/Ant-v2_2x4/2mhrctn7/actor_agent0.pt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250616%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250616T000215Z&X-Goog-Expires=86399&X-Goog-Signature=47fc8465a8441d5c846ea5a0b98b1e6ff5ec733c742f949971ae3a336f9c1625c9bbaa863691a81e7a63b7ce23171dc9746c7c3a2e6b0fef5bec6123f4667f5d42aad18f35dfae7928bfdaebe5ca7e73b9960135b549c3850742af3766bc5f2abdb65d65626ff3fd930c0a74af26993740d8298d9818f6a6c73e8d7f774ba716ac43d0df721ce76f5760a31697e84ef8e84eebf0f663fb74484277cf7e2b290fb5c5589cd7b74506198b6a1f9b857b2a4d885c05bfae5753c1876f641c4cd8ed3ba998224cba12454b1ad18ea20e8d91ff146e13ff4061d6a924876e97d5b1daf59adefdd1a66c0df55d5cb4c173840f1ed4ebe6a979df7cec4cc5eb982351bc&X-Goog-SignedHeaders=host&X-User=zhi-zheng1997 HTTP/1.1" 200 0
+2025-06-16 02:02:16,005 INFO    Thread-14 :604921 [upload_job.py:push():112] Uploaded file /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/files/actor_agent0.pt
+2025-06-16 02:02:17,078 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: poll_exit
+2025-06-16 02:02:17,078 DEBUG   SenderThread:604921 [sender.py:send():88] send: request
+2025-06-16 02:02:17,078 DEBUG   SenderThread:604921 [sender.py:send_request():97] send_request: poll_exit
+2025-06-16 02:02:17,079 INFO    SenderThread:604921 [file_pusher.py:join():174] waiting for file pusher
+2025-06-16 02:02:17,079 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: get_summary
+2025-06-16 02:02:17,080 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: sampled_history
+2025-06-16 02:02:17,081 DEBUG   HandlerThread:604921 [handler.py:handle_request():54] handle_request: shutdown
+2025-06-16 02:02:17,081 INFO    HandlerThread:604921 [handler.py:finish():267] shutting down handler
+2025-06-16 02:02:17,790 INFO    WriterThread:604921 [datastore.py:close():257] close: /home/zhi.zheng/zz/Multi-Agent-Constrained-Policy-Optimisation/MAPPO-PCRPO/mappo_pcrpo/scripts/results/mujoco/Ant-v2/mappo_pcrpo/rnn/wandb/run-20250616_015124-2mhrctn7/run-2mhrctn7.wandb
+2025-06-16 02:02:18,079 INFO    SenderThread:604921 [sender.py:finish():583] shutting down sender
+2025-06-16 02:02:18,079 INFO    SenderThread:604921 [file_pusher.py:finish():169] shutting down file pusher
+2025-06-16 02:02:18,079 INFO    SenderThread:604921 [file_pusher.py:join():174] waiting for file pusher
+2025-06-16 02:02:18,080 INFO    MainThread:604921 [internal.py:handle_exit():137] Internal process exited
