@@ -3,5 +3,6 @@
 *.zz
 MACPO/macpo/scripts/results
 MAPCRPO/mapcrpo/scripts/results
-/results
+results/
+wandb/
 __pycache__

@@ -130,7 +130,7 @@ class R_MAPPO_Pcrpo:
         _grads = []
         for val in grads:
             if val != None:
-                _grads.append(val);
+                _grads.append(val)
 
         return torch.cat([grad.reshape(-1) for grad in _grads])
 
@@ -246,16 +246,14 @@ class R_MAPPO_Pcrpo:
                                                                                            rnn_states_cost_batch)
 
         # todo: lagrangian coef
-        # adv_targ_hybrid = adv_targ - self.lamda_lagr*cost_adv_targ
-        # Calculate the reward gradient 
-        # adv_targ_hybrid = adv_targ
+        adv_targ_hybrid =  adv_targ - self.lamda_lagr*cost_adv_targ
 
         # todo: lagrangian actor update step
         # actor update
         imp_weights = torch.exp(action_log_probs - old_action_log_probs_batch)
 
-        surr1 = imp_weights * adv_targ
-        surr2 = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ
+        surr1 = imp_weights * adv_targ_hybrid
+        surr2 = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_hybrid
 
         if self._use_policy_active_masks:
             policy_action_loss = (-torch.sum(factor_batch * torch.min(surr1, surr2),
@@ -268,51 +266,26 @@ class R_MAPPO_Pcrpo:
 
         self.policy.actor_optimizer.zero_grad()
 
-        # if update_actor:
-        #     (policy_loss - dist_entropy * self.entropy_coef).backward(retain_graph=True)
+        # Compute gradients of (policy_loss - dist_entropy * self.entropy_coef) w.r.t. actor parameters
+        actor_params = list(self.policy.actor.parameters())
+        grads = torch.autograd.grad(policy_loss - dist_entropy * self.entropy_coef, actor_params, retain_graph=True, allow_unused=True)
+        # Apply the gradients to the parameters
+        for param, grad in zip(actor_params, grads):
+            if grad is not None:
+                if param.grad is None:
+                    param.grad = grad.clone()
+                else:
+                    param.grad.copy_(grad)
 
-        reward_grads = self._get_flat_grad(policy_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True)
-        # reward_grads = [param.grad.clone() for param in self.policy.actor.parameters() if param.grad is not None]
+        # if update_actor:
+        #     (policy_loss - dist_entropy * self.entropy_coef).backward()
+
         if self._use_max_grad_norm:
             actor_grad_norm = nn.utils.clip_grad_norm_(self.policy.actor.parameters(), self.max_grad_norm)
         else:
             actor_grad_norm = get_gard_norm(self.policy.actor.parameters())
 
-        for param, reward_grad in zip(self.policy.actor.parameters(), reward_grads):
-            if param.grad is not None:
-                param.grad = reward_grad
-
         self.policy.actor_optimizer.step()
-
-        # self.policy.actor_optimizer.step()
-
-        # Calculate the cost gradient
-
-        # surr1 = -1 * imp_weights * cost_adv_targ
-        # surr2 = -1 * torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * cost_adv_targ
-
-        # if self._use_policy_active_masks:
-        #     policy_action_loss = (-torch.sum(factor_batch * torch.min(surr1, surr2),
-        #                                      dim=-1,
-        #                                      keepdim=True) * active_masks_batch).sum() / active_masks_batch.sum()
-        # else:
-        #     policy_action_loss = -torch.sum(factor_batch * torch.min(surr1, surr2), dim=-1, keepdim=True).mean()
-
-        # policy_loss = policy_action_loss
-
-        # self.policy.actor_optimizer.zero_grad()
-
-        # if update_actor:
-        #     (policy_loss - dist_entropy * self.entropy_coef).backward()
-
-        # cost_grads = self._get_flat_grad(policy_loss, self.policy.actor, retain_graph=True)
-
-        # for param, reward_grad in zip(self.policy.actor.parameters(), reward_grads):
-        #     if param.grad is not None:
-        #         param.grad = reward_grad
-
-        # self.policy.actor_optimizer.step()
-        # self._set_from_flat_params(self.policy.actor, reward_new_params)
 
         # todo: update lamda_lagr
         delta_lamda_lagr = -(( aver_episode_costs.mean() - self.safety_bound) * (1 - self.gamma) + (imp_weights * cost_adv_targ)).mean().detach()
