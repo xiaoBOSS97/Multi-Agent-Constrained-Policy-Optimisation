@@ -6,3 +6,4 @@ MAPCRPO/mapcrpo/scripts/results
 results/
 wandb/
 __pycache__
+.vscode/
