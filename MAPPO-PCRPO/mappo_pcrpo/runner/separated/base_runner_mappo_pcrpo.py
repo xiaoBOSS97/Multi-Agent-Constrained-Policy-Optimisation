@@ -53,6 +53,8 @@ class Runner(object):
         # dir
         self.model_dir = self.all_args.model_dir
 
+        self.episode = 0
+
         if self.use_render:
             import imageio
             self.run_dir = config["run_dir"]
@@ -163,7 +165,7 @@ class Runner(object):
             # safe_buffer, cost_adv = self.buffer_filter(agent_id)
             # train_info = self.trainer[agent_id].train(safe_buffer, cost_adv)
 
-            train_info = self.trainer[agent_id].train(self.buffer[agent_id])
+            train_info = self.trainer[agent_id].train(self.buffer[agent_id], self.episode)
 
             new_actions_logprob, _ = self.trainer[agent_id].policy.actor.evaluate_actions(
                 self.buffer[agent_id].obs[:-1].reshape(-1, *self.buffer[agent_id].obs.shape[2:]),

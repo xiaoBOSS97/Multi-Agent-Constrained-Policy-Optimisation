@@ -63,6 +63,7 @@ class MujocoRunner(Runner):
                 self.insert(data)
 
             # compute return and update network
+            self.episode = episode
             self.compute()
             train_infos = self.train()
 

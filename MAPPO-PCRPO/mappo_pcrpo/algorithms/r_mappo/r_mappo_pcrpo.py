@@ -186,7 +186,7 @@ class R_MAPPO_Pcrpo:
         ])
         return flat_grad
 
-    def ppo_update(self, sample, update_actor=True, precomputed_eval=None,
+    def ppo_update(self, sample, episode, update_actor=True, precomputed_eval=None,
                    precomputed_threshold=None,
                    diff_threshold=False):
         """
@@ -281,8 +281,8 @@ class R_MAPPO_Pcrpo:
         # actor update
         imp_weights = torch.exp(action_log_probs - old_action_log_probs_batch)
 
-        surr1_reward = imp_weights * adv_targ
-        surr2_reward = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ
+        surr1_reward = imp_weights * adv_targ_hybrid
+        surr2_reward = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_hybrid
 
         if self._use_policy_active_masks:
             reward_loss = (-torch.sum(factor_batch * torch.min(surr1_reward, surr2_reward),
@@ -294,7 +294,7 @@ class R_MAPPO_Pcrpo:
         self.policy.actor_optimizer.zero_grad()
 
         # cost grad
-        adv_targ_loss = -self.lamda_lagr*cost_adv_targ
+        adv_targ_loss = - self.lamda_lagr*cost_adv_targ
 
         surr1_cost = imp_weights * adv_targ_loss
         surr2_cost = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_loss
@@ -311,8 +311,18 @@ class R_MAPPO_Pcrpo:
         # reward_grads = torch.autograd.grad(reward_loss - dist_entropy * self.entropy_coef, actor_params, retain_graph=True, allow_unused=True)
         # cost_grads = torch.autograd.grad(cost_loss - dist_entropy * self.entropy_coef, actor_params, retain_graph=True, allow_unused=True)
         reward_grads = self._get_all_flat_grad(reward_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True, create_graph=True)
-        cost_grads = self._get_all_flat_grad(cost_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True, create_graph=True)
-        pcrpo_grads = pcgrad(reward_grads, cost_grads)
+        # cost_grads = self._get_all_flat_grad(cost_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True, create_graph=True)
+        final_grads = reward_grads
+
+        # if episode <=300:
+        #     final_grads = reward_grads
+        # else:
+        #     if aver_episode_costs.mean() > self.safety_bound+1:
+        #         final_grads = pcgrad(reward_grads, cost_grads)
+        #     elif aver_episode_costs.mean() < self.safety_bound-1:
+        #         final_grads = reward_grads
+        #     else:
+        #         final_grads = pcgrad(reward_grads, cost_grads)
 
         # Apply the gradients to the parameters
         param_shapes = [p.shape for p in self.policy.actor.parameters()]
@@ -322,7 +332,7 @@ class R_MAPPO_Pcrpo:
         grads_unflattened = []
         offset = 0
         for shape, size in zip(param_shapes, param_sizes):
-            grads_unflattened.append(pcrpo_grads[offset:offset + size].view(shape))
+            grads_unflattened.append(final_grads[offset:offset + size].view(shape))
             offset += size
 
         # 2. Assign to .grad (always clone to be safe)
@@ -331,7 +341,7 @@ class R_MAPPO_Pcrpo:
                 param.grad = grad.clone()
             else:
                 param.grad.copy_(grad)
-                
+        import pdb; pdb.set_trace()
         # if update_actor:
         #     (policy_loss - dist_entropy * self.entropy_coef).backward()
 
@@ -374,7 +384,7 @@ class R_MAPPO_Pcrpo:
 
         return value_loss, critic_grad_norm, policy_loss, dist_entropy, actor_grad_norm, imp_weights, cost_loss, cost_grad_norm
 
-    def train(self, buffer, update_actor=True):
+    def train(self, buffer, episode, update_actor=True):
         """
         Perform a training update using minibatch GD.
         :param buffer: (SharedReplayBuffer) buffer containing training data.
@@ -422,7 +432,7 @@ class R_MAPPO_Pcrpo:
             for sample in data_generator:
 
                 value_loss, critic_grad_norm, policy_loss, dist_entropy, actor_grad_norm, imp_weights, cost_loss, cost_grad_norm \
-                    = self.ppo_update(sample, update_actor, precomputed_threshold=None,
+                    = self.ppo_update(sample, episode, update_actor, precomputed_threshold=None,
                                       diff_threshold=False)
 
                 train_info['value_loss'] += value_loss.item()
