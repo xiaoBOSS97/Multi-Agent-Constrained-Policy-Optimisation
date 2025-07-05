@@ -4,6 +4,7 @@ from itertools import chain
 import wandb
 import numpy as np
 from functools import reduce
+from torch import Tensor
 import torch
 from mappo_lagrangian.runner.separated.base_runner_mappo_lagr import Runner
 
@@ -93,10 +94,14 @@ class MujocoRunner(Runner):
                     self.return_aver_cost(aver_episode_costs)
                     print("some episodes done, average rewards: {}, average costs: {}".format(aver_episode_rewards,
                                                                                               aver_episode_costs))
-                    self.writter.add_scalars("train_episode_rewards", {"aver_rewards": aver_episode_rewards},
-                                             total_num_steps)
-                    self.writter.add_scalars("train_episode_costs", {"aver_costs": aver_episode_costs},
-                                             total_num_steps)
+                    if self.use_wandb:
+                        wandb.log({"aver_rewards": aver_episode_rewards, "aver_costs": aver_episode_costs},
+                                  step=total_num_steps)
+                    else:
+                        self.writter.add_scalars("train_episode_rewards", {"aver_rewards": aver_episode_rewards},
+                                                total_num_steps)
+                        self.writter.add_scalars("train_episode_costs", {"aver_costs": aver_episode_costs},
+                                                total_num_steps)
 
             # eval
             if episode % self.eval_interval == 0 and self.use_eval:
@@ -200,6 +205,10 @@ class MujocoRunner(Runner):
             for k, v in train_infos[0][agent_id].items():
                 agent_k = "agent%i/" % agent_id + k
                 if self.use_wandb:
+                    try:
+                        v = Tensor.cpu(v)
+                    except:
+                        pass
                     wandb.log({agent_k: v}, step=total_num_steps)
                 else:
                     self.writter.add_scalars(agent_k, {agent_k: v}, total_num_steps)
