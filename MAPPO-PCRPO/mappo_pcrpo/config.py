@@ -119,7 +119,7 @@ def get_config():
         --clone_coef <float>
             clone term coefficient (default: 0.01)
     
-    Run parameters：
+    Run parameters:
         --use_linear_lr_decay
             by default, do not apply linear decay to learning rate. If set, use a linear schedule on the learning rate
     

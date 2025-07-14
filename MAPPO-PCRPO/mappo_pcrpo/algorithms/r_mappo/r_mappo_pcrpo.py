@@ -6,6 +6,7 @@ from mappo_pcrpo.utils.popart import PopArt
 from mappo_pcrpo.algorithms.utils.util import check
 from mappo_pcrpo.algorithms.utils.trpo import pcgrad
 
+
 class R_MAPPO_Pcrpo:
     """
     Trainer class for MAPPO-P to update policies.
@@ -24,13 +25,24 @@ class R_MAPPO_Pcrpo:
                                           that satisfied constraint.
     """
 
-    def __init__(self,
-                 args,
-                 policy, hvp_approach=None, attempt_feasible_recovery=False,
-                 attempt_infeasible_recovery=False, revert_to_last_safe_point=False, delta_bound=0.02, safety_bound=10,
-                 _backtrack_ratio=0.8, _max_backtracks=15, _constraint_name_1="trust_region",
-                 _constraint_name_2="safety_region", linesearch_infeasible_recovery=True, accept_violation=False,
-                 device=torch.device("cpu")):
+    def __init__(
+        self,
+        args,
+        policy,
+        hvp_approach=None,
+        attempt_feasible_recovery=False,
+        attempt_infeasible_recovery=False,
+        revert_to_last_safe_point=False,
+        delta_bound=0.02,
+        safety_bound=10,
+        _backtrack_ratio=0.8,
+        _max_backtracks=15,
+        _constraint_name_1="trust_region",
+        _constraint_name_2="safety_region",
+        linesearch_infeasible_recovery=True,
+        accept_violation=False,
+        device=torch.device("cpu"),
+    ):
         self.args = args
         self.device = device
         self.tpdv = dict(dtype=torch.float32, device=device)
@@ -70,12 +82,9 @@ class R_MAPPO_Pcrpo:
         self._linesearch_infeasible_recovery = linesearch_infeasible_recovery
         self._accept_violation = accept_violation
 
-        self.lagrangian_coef = args.lagrangian_coef_rate # lagrangian_coef
-        self.lamda_lagr = args.lamda_lagr # 0.78
-        self.safety_bound = args.safety_bound # 0.2 Ant
-
-
-
+        self.lagrangian_coef = args.lagrangian_coef_rate  # lagrangian_coef
+        self.lamda_lagr = args.lamda_lagr  # 0.78
+        self.safety_bound = args.safety_bound  # 0.2 Ant
 
         self._hvp_approach = hvp_approach
 
@@ -84,7 +93,9 @@ class R_MAPPO_Pcrpo:
         else:
             self.value_normalizer = None
 
-    def cal_value_loss(self, values, value_preds_batch, return_batch, active_masks_batch):
+    def cal_value_loss(
+        self, values, value_preds_batch, return_batch, active_masks_batch
+    ):
         """
         Calculate value function loss.
         :param values: (torch.Tensor) value function predictions.
@@ -95,13 +106,15 @@ class R_MAPPO_Pcrpo:
         :return value_loss: (torch.Tensor) value function loss.
         """
         if self._use_popart:
-            value_pred_clipped = value_preds_batch + (values - value_preds_batch).clamp(-self.clip_param,
-                                                                                        self.clip_param)
+            value_pred_clipped = value_preds_batch + (values - value_preds_batch).clamp(
+                -self.clip_param, self.clip_param
+            )
             error_clipped = self.value_normalizer(return_batch) - value_pred_clipped
             error_original = self.value_normalizer(return_batch) - values
         else:
-            value_pred_clipped = value_preds_batch + (values - value_preds_batch).clamp(-self.clip_param,
-                                                                                        self.clip_param)
+            value_pred_clipped = value_preds_batch + (values - value_preds_batch).clamp(
+                -self.clip_param, self.clip_param
+            )
             error_clipped = return_batch - value_pred_clipped
             error_original = return_batch - values
 
@@ -118,13 +131,17 @@ class R_MAPPO_Pcrpo:
             value_loss = value_loss_original
 
         if self._use_value_active_masks:
-            value_loss = (value_loss * active_masks_batch).sum() / active_masks_batch.sum()
+            value_loss = (
+                value_loss * active_masks_batch
+            ).sum() / active_masks_batch.sum()
         else:
             value_loss = value_loss.mean()
 
         return value_loss
 
-    def _get_flat_grad(self, y: torch.Tensor, model: nn.Module, **kwargs) -> torch.Tensor:
+    def _get_flat_grad(
+        self, y: torch.Tensor, model: nn.Module, **kwargs
+    ) -> torch.Tensor:
         # caculate first order gradient of kl with respect to theta
         grads = torch.autograd.grad(y, model.parameters(), **kwargs, allow_unused=True)  # type: ignore
         # a = torch.where(grads.dtype = None, zero, grads))
@@ -135,8 +152,13 @@ class R_MAPPO_Pcrpo:
 
         return torch.cat([grad.reshape(-1) for grad in _grads])
 
-    def _conjugate_gradients(self, b: torch.Tensor, flat_kl_grad: torch.Tensor, nsteps: int = 10,
-                             residual_tol: float = 1e-10) -> torch.Tensor:
+    def _conjugate_gradients(
+        self,
+        b: torch.Tensor,
+        flat_kl_grad: torch.Tensor,
+        nsteps: int = 10,
+        residual_tol: float = 1e-10,
+    ) -> torch.Tensor:
         x = torch.zeros_like(b)
         r, p = b.clone(), b.clone()
         # Note: should be 'r, p = b - MVP(x)', but for x=0, MVP(x)=0.
@@ -154,41 +176,55 @@ class R_MAPPO_Pcrpo:
             rdotr = new_rdotr
         return x
 
-    def cal_second_hessian(self, v: torch.Tensor, flat_kl_grad: torch.Tensor) -> torch.Tensor:
+    def cal_second_hessian(
+        self, v: torch.Tensor, flat_kl_grad: torch.Tensor
+    ) -> torch.Tensor:
         """Matrix vector product."""
         # caculate second order gradient of kl with respect to theta
         kl_v = (flat_kl_grad * v).sum()
         flat_kl_grad_grad = self._get_flat_grad(
-            kl_v, self.policy.actor, retain_graph=True).detach()
+            kl_v, self.policy.actor, retain_graph=True
+        ).detach()
         return flat_kl_grad_grad + v * self._damping
-    
+
     def _get_flat_parames(self, model: nn.Module) -> torch.Tensor:
         params = []
         for param in model.parameters():
             params.append(param.data.view(-1))
         return torch.cat(params)
 
-    def _set_from_flat_params(self, model: nn.Module, flat_params: torch.Tensor) -> nn.Module:
+    def _set_from_flat_params(
+        self, model: nn.Module, flat_params: torch.Tensor
+    ) -> nn.Module:
         prev_ind = 0
         for param in model.parameters():
             flat_size = int(np.prod(list(param.size())))
             param.data.copy_(
-                flat_params[prev_ind:prev_ind + flat_size].view(param.size()))
+                flat_params[prev_ind : prev_ind + flat_size].view(param.size())
+            )
             prev_ind += flat_size
         return model
-    
-    def _get_all_flat_grad(self, y, model, retain_graph=None, create_graph=False):
-        grads = torch.autograd.grad(y, model.parameters(), retain_graph=retain_graph,
-                                    create_graph=create_graph, allow_unused=True)
-        flat_grad = torch.cat([
-            (g if g is not None else torch.zeros_like(p)).contiguous().view(-1)
-            for p, g in zip(model.parameters(), grads)
-        ])
-        return flat_grad
 
-    def ppo_update(self, sample, episode, update_actor=True, precomputed_eval=None,
-                   precomputed_threshold=None,
-                   diff_threshold=False):
+    def _get_all_flat_grad(self, loss, model):
+        grads = []
+        model.zero_grad()
+        loss.backward(retain_graph=True)
+        for param in model.parameters():
+            if param.grad is not None:
+                grads.append(param.grad.view(-1))
+            else:
+                grads.append(torch.zeros_like(param).view(-1))
+        return torch.cat(grads)
+
+    def ppo_update(
+        self,
+        sample,
+        episode,
+        update_actor=True,
+        precomputed_eval=None,
+        precomputed_threshold=None,
+        diff_threshold=False,
+    ):
         """
         Update actor and critic networks.
         :param sample: (Tuple) contains data batch with which to update networks.
@@ -228,10 +264,26 @@ class R_MAPPO_Pcrpo:
                                         lin_constraint - old_lin_constraint < threshold.
         """
 
-        share_obs_batch, obs_batch, rnn_states_batch, rnn_states_critic_batch, actions_batch, \
-        value_preds_batch, return_batch, masks_batch, active_masks_batch, old_action_log_probs_batch, \
-        adv_targ, available_actions_batch, factor_batch, cost_preds_batch, cost_returns_barch, rnn_states_cost_batch, \
-        cost_adv_targ, aver_episode_costs = sample
+        (
+            share_obs_batch,
+            obs_batch,
+            rnn_states_batch,
+            rnn_states_critic_batch,
+            actions_batch,
+            value_preds_batch,
+            return_batch,
+            masks_batch,
+            active_masks_batch,
+            old_action_log_probs_batch,
+            adv_targ,
+            available_actions_batch,
+            factor_batch,
+            cost_preds_batch,
+            cost_returns_barch,
+            rnn_states_cost_batch,
+            cost_adv_targ,
+            aver_episode_costs,
+        ) = sample
 
         old_action_log_probs_batch = check(old_action_log_probs_batch).to(**self.tpdv)
         adv_targ = check(adv_targ).to(**self.tpdv)
@@ -245,15 +297,19 @@ class R_MAPPO_Pcrpo:
         cost_preds_batch = check(cost_preds_batch).to(**self.tpdv)
 
         # Reshape to do in a single forward pass for all steps
-        values, action_log_probs, dist_entropy, cost_values = self.policy.evaluate_actions(share_obs_batch,
-                                                                                           obs_batch,
-                                                                                           rnn_states_batch,
-                                                                                           rnn_states_critic_batch,
-                                                                                           actions_batch,
-                                                                                           masks_batch,
-                                                                                           available_actions_batch,
-                                                                                           active_masks_batch,
-                                                                                           rnn_states_cost_batch)
+        values, action_log_probs, dist_entropy, cost_values = (
+            self.policy.evaluate_actions(
+                share_obs_batch,
+                obs_batch,
+                rnn_states_batch,
+                rnn_states_critic_batch,
+                actions_batch,
+                masks_batch,
+                available_actions_batch,
+                active_masks_batch,
+                rnn_states_cost_batch,
+            )
+        )
 
         # todo: lagrangian coef
         # adv_targ_hybrid =  adv_targ - self.lamda_lagr*cost_adv_targ
@@ -275,78 +331,101 @@ class R_MAPPO_Pcrpo:
         # policy_loss = policy_action_loss
 
         # reward grad
-        adv_targ_hybrid =  adv_targ - self.lamda_lagr*cost_adv_targ
+        adv_targ_hybrid = adv_targ - self.lamda_lagr * cost_adv_targ
 
         # todo: lagrangian actor update step
         # actor update
         imp_weights = torch.exp(action_log_probs - old_action_log_probs_batch)
 
-        surr1_reward = imp_weights * adv_targ_hybrid
-        surr2_reward = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_hybrid
+        surr1_reward = imp_weights * adv_targ
+        surr2_reward = (
+            torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param)
+            * adv_targ
+        )
 
         if self._use_policy_active_masks:
-            reward_loss = (-torch.sum(factor_batch * torch.min(surr1_reward, surr2_reward),
-                                             dim=-1,
-                                             keepdim=True) * active_masks_batch).sum() / active_masks_batch.sum()
+            reward_loss = (
+                -torch.sum(
+                    factor_batch * torch.min(surr1_reward, surr2_reward),
+                    dim=-1,
+                    keepdim=True,
+                )
+                * active_masks_batch
+            ).sum() / active_masks_batch.sum()
         else:
-            reward_loss = -torch.sum(factor_batch * torch.min(surr1_reward, surr2_reward), dim=-1, keepdim=True).mean()
+            reward_loss = -torch.sum(
+                factor_batch * torch.min(surr1_reward, surr2_reward),
+                dim=-1,
+                keepdim=True,
+            ).mean()
+
+        # cost grad
+        # adv_targ_loss = -self.lamda_lagr * cost_adv_targ
+        adv_targ_loss = -cost_adv_targ
+
+        surr1_cost = imp_weights * adv_targ_loss
+        surr2_cost = (
+            torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param)
+            * adv_targ_loss
+        )
+
+        if self._use_policy_active_masks:
+            cost_loss = (
+                -torch.sum(
+                    factor_batch * torch.min(surr1_cost, surr2_cost),
+                    dim=-1,
+                    keepdim=True,
+                )
+                * active_masks_batch
+            ).sum() / active_masks_batch.sum()
+        else:
+            cost_loss = -torch.sum(
+                factor_batch * torch.min(surr1_cost, surr2_cost), dim=-1, keepdim=True
+            ).mean()
 
         self.policy.actor_optimizer.zero_grad()
 
-        # cost grad
-        adv_targ_loss = - self.lamda_lagr*cost_adv_targ
-
-        surr1_cost = imp_weights * adv_targ_loss
-        surr2_cost = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_loss
-
-        if self._use_policy_active_masks:
-            cost_loss = (-torch.sum(factor_batch * torch.min(surr1_cost, surr2_cost),
-                                             dim=-1,
-                                             keepdim=True) * active_masks_batch).sum() / active_masks_batch.sum()
-        else:
-            cost_loss = -torch.sum(factor_batch * torch.min(surr1_cost, surr2_cost), dim=-1, keepdim=True).mean()
-
         # Compute gradients of (policy_loss - dist_entropy * self.entropy_coef) w.r.t. actor parameters
-        actor_params = list(self.policy.actor.parameters())
+        # actor_params = list(self.policy.actor.parameters())
         # reward_grads = torch.autograd.grad(reward_loss - dist_entropy * self.entropy_coef, actor_params, retain_graph=True, allow_unused=True)
         # cost_grads = torch.autograd.grad(cost_loss - dist_entropy * self.entropy_coef, actor_params, retain_graph=True, allow_unused=True)
-        reward_grads = self._get_all_flat_grad(reward_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True, create_graph=True)
-        # cost_grads = self._get_all_flat_grad(cost_loss - dist_entropy * self.entropy_coef, self.policy.actor, retain_graph=True, create_graph=True)
-        final_grads = reward_grads
+        reward_grads = self._get_all_flat_grad(
+            reward_loss - dist_entropy * self.entropy_coef, self.policy.actor
+        )
+        cost_grads = (
+            self._get_all_flat_grad(
+                cost_loss - dist_entropy * self.entropy_coef, self.policy.actor
+            )
+            / 2
+        )
+        # final_grads = pcgrad(reward_grads, cost_grads)
 
-        # if episode <=300:
-        #     final_grads = reward_grads
-        # else:
-        #     if aver_episode_costs.mean() > self.safety_bound+1:
-        #         final_grads = pcgrad(reward_grads, cost_grads)
-        #     elif aver_episode_costs.mean() < self.safety_bound-1:
-        #         final_grads = reward_grads
-        #     else:
-        #         final_grads = pcgrad(reward_grads, cost_grads)
+        if episode <= 200:
+            final_grads = pcgrad(reward_grads, cost_grads)
+        else:
+            if aver_episode_costs.mean() > self.safety_bound + 5:
+                final_grads = cost_grads
+            elif aver_episode_costs.mean() < self.safety_bound - 5:
+                final_grads = reward_grads
+            else:
+                final_grads = pcgrad(reward_grads, cost_grads)
 
         # Apply the gradients to the parameters
-        param_shapes = [p.shape for p in self.policy.actor.parameters()]
-        param_sizes = [p.numel() for p in self.policy.actor.parameters()]
-
-        # 1. Unflatten
-        grads_unflattened = []
         offset = 0
-        for shape, size in zip(param_shapes, param_sizes):
-            grads_unflattened.append(final_grads[offset:offset + size].view(shape))
-            offset += size
+        with torch.no_grad():
+            for param in self.policy.actor.parameters():
+                numel = param.numel()
+                param.grad = final_grads[offset : offset + numel].view_as(param).clone()
+                offset += numel
 
-        # 2. Assign to .grad (always clone to be safe)
-        for param, grad in zip(self.policy.actor.parameters(), grads_unflattened):
-            if param.grad is None:
-                param.grad = grad.clone()
-            else:
-                param.grad.copy_(grad)
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         # if update_actor:
         #     (policy_loss - dist_entropy * self.entropy_coef).backward()
 
         if self._use_max_grad_norm:
-            actor_grad_norm = nn.utils.clip_grad_norm_(self.policy.actor.parameters(), self.max_grad_norm)
+            actor_grad_norm = nn.utils.clip_grad_norm_(
+                self.policy.actor.parameters(), self.max_grad_norm
+            )
         else:
             actor_grad_norm = get_gard_norm(self.policy.actor.parameters())
 
@@ -355,34 +434,191 @@ class R_MAPPO_Pcrpo:
         policy_loss = reward_loss
 
         # todo: update lamda_lagr
-        delta_lamda_lagr = -(( aver_episode_costs.mean() - self.safety_bound) * (1 - self.gamma) + (imp_weights * cost_adv_targ)).mean().detach()
+        delta_lamda_lagr = (
+            -(
+                (aver_episode_costs.mean() - self.safety_bound) * (1 - self.gamma)
+                + (imp_weights * cost_adv_targ)
+            )
+            .mean()
+            .detach()
+        )
 
         R_Relu = torch.nn.ReLU()
-        new_lamda_lagr = R_Relu(self.lamda_lagr - (delta_lamda_lagr * self.lagrangian_coef))
+        new_lamda_lagr = R_Relu(
+            self.lamda_lagr - (delta_lamda_lagr * self.lagrangian_coef)
+        )
 
         self.lamda_lagr = new_lamda_lagr
 
         # todo: reward critic update
-        value_loss = self.cal_value_loss(values, value_preds_batch, return_batch, active_masks_batch)
+        value_loss = self.cal_value_loss(
+            values, value_preds_batch, return_batch, active_masks_batch
+        )
         self.policy.critic_optimizer.zero_grad()
         (value_loss * self.value_loss_coef).backward()
         if self._use_max_grad_norm:
-            critic_grad_norm = nn.utils.clip_grad_norm_(self.policy.critic.parameters(), self.max_grad_norm)
+            critic_grad_norm = nn.utils.clip_grad_norm_(
+                self.policy.critic.parameters(), self.max_grad_norm
+            )
         else:
             critic_grad_norm = get_gard_norm(self.policy.critic.parameters())
         self.policy.critic_optimizer.step()
 
         # todo: cost critic update
-        cost_loss = self.cal_value_loss(cost_values, cost_preds_batch, cost_returns_barch, active_masks_batch)
+        cost_loss = self.cal_value_loss(
+            cost_values, cost_preds_batch, cost_returns_barch, active_masks_batch
+        )
         self.policy.cost_optimizer.zero_grad()
         (cost_loss * self.value_loss_coef).backward()
         if self._use_max_grad_norm:
-            cost_grad_norm = nn.utils.clip_grad_norm_(self.policy.cost_critic.parameters(), self.max_grad_norm)
+            cost_grad_norm = nn.utils.clip_grad_norm_(
+                self.policy.cost_critic.parameters(), self.max_grad_norm
+            )
         else:
             cost_grad_norm = get_gard_norm(self.policy.cost_critic.parameters())
         self.policy.cost_optimizer.step()
 
-        return value_loss, critic_grad_norm, policy_loss, dist_entropy, actor_grad_norm, imp_weights, cost_loss, cost_grad_norm
+        return (
+            value_loss,
+            critic_grad_norm,
+            policy_loss,
+            dist_entropy,
+            actor_grad_norm,
+            imp_weights,
+            cost_loss,
+            cost_grad_norm,
+        )
+
+    # def ppo_update(self, sample, update_actor=True, precomputed_eval=None,
+    #                precomputed_threshold=None,
+    #                diff_threshold=False):
+    #     """
+    #     Update actor and critic networks.
+    #     :param sample: (Tuple) contains data batch with which to update networks.
+    #     :update_actor: (bool) whether to update actor network.
+
+    #     :return value_loss: (torch.Tensor) value function loss.
+    #     :return critic_grad_norm: (torch.Tensor) gradient norm from critic update.
+    #     ;return policy_loss: (torch.Tensor) actor(policy) loss value.
+    #     :return dist_entropy: (torch.Tensor) action entropies.
+    #     :return actor_grad_norm: (torch.Tensor) gradient norm from actor update.
+    #     :return imp_weights: (torch.Tensor) importance sampling weights.
+    #     :param precompute: Use an 'input' for the linearization constant instead of true_linear_leq_constraint.
+    #                        If present, overrides surrogate
+    #                        When using precompute, the last input is the precomputed linearization constant
+
+    #     :param attempt_(in)feasible_recovery: deals with cases where x=0 is infeasible point but problem still feasible
+    #                                                            (where optimization problem is entirely infeasible)
+
+    #     :param revert_to_last_safe_point: Behavior protocol for situation when optimization problem is entirely infeasible.
+    #                                       Specifies that we should just reset the parameters to the last point
+    #                                       that satisfied constraint.
+
+    #     precomputed_eval         :  The value of the safety constraint at theta = theta_old.
+    #                                 Provide this when the lin_constraint function is a surrogate, and evaluating it at
+    #                                 theta_old will not give you the correct value.
+
+    #     precomputed_threshold &
+    #     diff_threshold           :  These relate to the linesearch that is used to ensure constraint satisfaction.
+    #                                 If the lin_constraint function is indeed the safety constraint function, then it
+    #                                 suffices to check that lin_constraint < max_lin_constraint_val to ensure satisfaction.
+    #                                 But if the lin_constraint function is a surrogate - ie, it only has the same
+    #                                 /gradient/ as the safety constraint - then the threshold we check it against has to
+    #                                 be adjusted. You can provide a fixed adjusted threshold via "precomputed_threshold."
+    #                                 When "diff_threshold" == True, instead of checking
+    #                                     lin_constraint < threshold,
+    #                                 it will check
+    #                                     lin_constraint - old_lin_constraint < threshold.
+    #     """
+
+    #     share_obs_batch, obs_batch, rnn_states_batch, rnn_states_critic_batch, actions_batch, \
+    #     value_preds_batch, return_batch, masks_batch, active_masks_batch, old_action_log_probs_batch, \
+    #     adv_targ, available_actions_batch, factor_batch, cost_preds_batch, cost_returns_barch, rnn_states_cost_batch, \
+    #     cost_adv_targ, aver_episode_costs = sample
+
+    #     old_action_log_probs_batch = check(old_action_log_probs_batch).to(**self.tpdv)
+    #     adv_targ = check(adv_targ).to(**self.tpdv)
+    #     cost_adv_targ = check(cost_adv_targ).to(**self.tpdv)
+    #     value_preds_batch = check(value_preds_batch).to(**self.tpdv)
+    #     return_batch = check(return_batch).to(**self.tpdv)
+    #     active_masks_batch = check(active_masks_batch).to(**self.tpdv)
+    #     factor_batch = check(factor_batch).to(**self.tpdv)
+    #     cost_returns_barch = check(cost_returns_barch).to(**self.tpdv)
+
+    #     cost_preds_batch = check(cost_preds_batch).to(**self.tpdv)
+    #     print("ppo")
+
+    #     # Reshape to do in a single forward pass for all steps
+    #     values, action_log_probs, dist_entropy, cost_values = self.policy.evaluate_actions(share_obs_batch,
+    #                                                                                        obs_batch,
+    #                                                                                        rnn_states_batch,
+    #                                                                                        rnn_states_critic_batch,
+    #                                                                                        actions_batch,
+    #                                                                                        masks_batch,
+    #                                                                                        available_actions_batch,
+    #                                                                                        active_masks_batch,
+    #                                                                                        rnn_states_cost_batch)
+
+    #     # todo: lagrangian coef
+    #     adv_targ_hybrid =  adv_targ - self.lamda_lagr*cost_adv_targ
+
+    #     # todo: lagrangian actor update step
+    #     # actor update
+    #     imp_weights = torch.exp(action_log_probs - old_action_log_probs_batch)
+
+    #     surr1 = imp_weights * adv_targ_hybrid
+    #     surr2 = torch.clamp(imp_weights, 1.0 - self.clip_param, 1.0 + self.clip_param) * adv_targ_hybrid
+
+    #     if self._use_policy_active_masks:
+    #         policy_action_loss = (-torch.sum(factor_batch * torch.min(surr1, surr2),
+    #                                          dim=-1,
+    #                                          keepdim=True) * active_masks_batch).sum() / active_masks_batch.sum()
+    #     else:
+    #         policy_action_loss = -torch.sum(factor_batch * torch.min(surr1, surr2), dim=-1, keepdim=True).mean()
+
+    #     policy_loss = policy_action_loss
+
+    #     self.policy.actor_optimizer.zero_grad()
+
+    #     if update_actor:
+    #         (policy_loss - dist_entropy * self.entropy_coef).backward()
+
+    #     if self._use_max_grad_norm:
+    #         actor_grad_norm = nn.utils.clip_grad_norm_(self.policy.actor.parameters(), self.max_grad_norm)
+    #     else:
+    #         actor_grad_norm = get_gard_norm(self.policy.actor.parameters())
+
+    #     self.policy.actor_optimizer.step()
+
+    #     # todo: update lamda_lagr
+    #     delta_lamda_lagr = -(( aver_episode_costs.mean() - self.safety_bound) * (1 - self.gamma) + (imp_weights * cost_adv_targ)).mean().detach()
+
+    #     R_Relu = torch.nn.ReLU()
+    #     new_lamda_lagr = R_Relu(self.lamda_lagr - (delta_lamda_lagr * self.lagrangian_coef))
+
+    #     self.lamda_lagr = new_lamda_lagr
+
+    #     # todo: reward critic update
+    #     value_loss = self.cal_value_loss(values, value_preds_batch, return_batch, active_masks_batch)
+    #     self.policy.critic_optimizer.zero_grad()
+    #     (value_loss * self.value_loss_coef).backward()
+    #     if self._use_max_grad_norm:
+    #         critic_grad_norm = nn.utils.clip_grad_norm_(self.policy.critic.parameters(), self.max_grad_norm)
+    #     else:
+    #         critic_grad_norm = get_gard_norm(self.policy.critic.parameters())
+    #     self.policy.critic_optimizer.step()
+
+    #     # todo: cost critic update
+    #     cost_loss = self.cal_value_loss(cost_values, cost_preds_batch, cost_returns_barch, active_masks_batch)
+    #     self.policy.cost_optimizer.zero_grad()
+    #     (cost_loss * self.value_loss_coef).backward()
+    #     if self._use_max_grad_norm:
+    #         cost_grad_norm = nn.utils.clip_grad_norm_(self.policy.cost_critic.parameters(), self.max_grad_norm)
+    #     else:
+    #         cost_grad_norm = get_gard_norm(self.policy.cost_critic.parameters())
+    #     self.policy.cost_optimizer.step()
+
+    #     return value_loss, critic_grad_norm, policy_loss, dist_entropy, actor_grad_norm, imp_weights, cost_loss, cost_grad_norm
 
     def train(self, buffer, episode, update_actor=True):
         """
@@ -393,7 +629,9 @@ class R_MAPPO_Pcrpo:
         :return train_info: (dict) contains information regarding training update (e.g. loss, grad norms, etc).
         """
         if self._use_popart:
-            advantages = buffer.returns[:-1] - self.value_normalizer.denormalize(buffer.value_preds[:-1])
+            advantages = buffer.returns[:-1] - self.value_normalizer.denormalize(
+                buffer.value_preds[:-1]
+            )
         else:
             advantages = buffer.returns[:-1] - buffer.value_preds[:-1]
         advantages_copy = advantages.copy()
@@ -403,7 +641,9 @@ class R_MAPPO_Pcrpo:
         advantages = (advantages - mean_advantages) / (std_advantages + 1e-5)
 
         if self._use_popart:
-            cost_adv = buffer.cost_returns[:-1] - self.value_normalizer.denormalize(buffer.cost_preds[:-1])
+            cost_adv = buffer.cost_returns[:-1] - self.value_normalizer.denormalize(
+                buffer.cost_preds[:-1]
+            )
         else:
             cost_adv = buffer.cost_returns[:-1] - buffer.cost_preds[:-1]
         cost_adv_copy = cost_adv.copy()
@@ -414,35 +654,52 @@ class R_MAPPO_Pcrpo:
 
         train_info = {}
 
-        train_info['value_loss'] = 0
-        train_info['policy_loss'] = 0
-        train_info['dist_entropy'] = 0
-        train_info['actor_grad_norm'] = 0
-        train_info['critic_grad_norm'] = 0
-        train_info['ratio'] = 0
-        train_info['cost_grad_norm'] = 0
-        train_info['cost_loss'] = 0
-        
+        train_info["value_loss"] = 0
+        train_info["policy_loss"] = 0
+        train_info["dist_entropy"] = 0
+        train_info["actor_grad_norm"] = 0
+        train_info["critic_grad_norm"] = 0
+        train_info["ratio"] = 0
+        train_info["cost_grad_norm"] = 0
+        train_info["cost_loss"] = 0
+
         for _ in range(self.ppo_epoch):
             if self._use_naive_recurrent:
-                data_generator = buffer.naive_recurrent_generator(advantages, self.num_mini_batch, cost_adv)
+                data_generator = buffer.naive_recurrent_generator(
+                    advantages, self.num_mini_batch, cost_adv
+                )
             else:
-                data_generator = buffer.feed_forward_generator(advantages, self.num_mini_batch, cost_adv=cost_adv)
+                data_generator = buffer.feed_forward_generator(
+                    advantages, self.num_mini_batch, cost_adv=cost_adv
+                )
 
             for sample in data_generator:
 
-                value_loss, critic_grad_norm, policy_loss, dist_entropy, actor_grad_norm, imp_weights, cost_loss, cost_grad_norm \
-                    = self.ppo_update(sample, episode, update_actor, precomputed_threshold=None,
-                                      diff_threshold=False)
+                (
+                    value_loss,
+                    critic_grad_norm,
+                    policy_loss,
+                    dist_entropy,
+                    actor_grad_norm,
+                    imp_weights,
+                    cost_loss,
+                    cost_grad_norm,
+                ) = self.ppo_update(
+                    sample,
+                    episode,
+                    update_actor,
+                    precomputed_threshold=None,
+                    diff_threshold=False,
+                )
 
-                train_info['value_loss'] += value_loss.item()
-                train_info['policy_loss'] += policy_loss.item()
-                train_info['dist_entropy'] += dist_entropy.item()
-                train_info['actor_grad_norm'] += actor_grad_norm
-                train_info['critic_grad_norm'] += critic_grad_norm
-                train_info['ratio'] += imp_weights.mean()
-                train_info['cost_loss'] += cost_loss.item()
-                train_info['cost_grad_norm'] += cost_grad_norm
+                train_info["value_loss"] += value_loss.item()
+                train_info["policy_loss"] += policy_loss.item()
+                train_info["dist_entropy"] += dist_entropy.item()
+                train_info["actor_grad_norm"] += actor_grad_norm
+                train_info["critic_grad_norm"] += critic_grad_norm
+                train_info["ratio"] += imp_weights.mean()
+                train_info["cost_loss"] += cost_loss.item()
+                train_info["cost_grad_norm"] += cost_grad_norm
 
         num_updates = self.ppo_epoch * self.num_mini_batch
 
